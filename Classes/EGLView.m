@@ -154,6 +154,7 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
 
 - (void)renderEAGL{
 	
+	// indicies or the faces (I spell that right?)
 	static GLubyte faces[6][4] = {
 		{2,1,3,0},
 		{5,6,4,7},
@@ -163,6 +164,7 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
 		{6,5,2,1}
 	};
 	
+	// points for the box
 	static GLfloat vertices[] = {
 		-0.5f,-0.5f,-0.5f,
 		0.5f,-0.5f,-0.5f,
