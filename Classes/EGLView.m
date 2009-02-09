@@ -124,7 +124,11 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
 		[self setupView];
 		
 		viewUpdateTimerInterval = 1.0 / 60.0; // 60fps
-		viewUpdateTimer = [NSTimer scheduledTimerWithTimeInterval:viewUpdateTimerInterval target:self selector:@selector(updateView) userInfo:nil repeats:YES];
+		viewUpdateTimer = [NSTimer scheduledTimerWithTimeInterval:viewUpdateTimerInterval 
+                                                           target:self 
+                                                         selector:@selector(updateView) 
+                                                         userInfo:nil 
+                                                          repeats:YES];
 		
 	}
 	return self;
@@ -155,6 +159,7 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
 - (void)renderEAGL{
 	
 	// indicies or the faces
+
 	static GLubyte faces[6][4] = {
 		{2,1,3,0},
 		{5,6,4,7},
