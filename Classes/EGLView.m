@@ -154,7 +154,7 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
 
 - (void)renderEAGL{
 	
-	// indicies or the faces (I spell that right?)
+	// indicies or the faces (I spell that right?) i dunno
 	static GLubyte faces[6][4] = {
 		{2,1,3,0},
 		{5,6,4,7},
