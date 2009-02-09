@@ -23,10 +23,13 @@
     MachTimer *precisionTimer;
     CGPoint beginPoint;
     CGPoint endPoint;   
+    CGFloat initialDistance;
 
 }
 
 -(IBAction)showImagePicker;
+-(CGFloat)distanceBetweenTwoPoints:(CGPoint)fromPoint toPoint:(CGPoint)toPoint;
+-(void)clearTouches;
 
 @end
 

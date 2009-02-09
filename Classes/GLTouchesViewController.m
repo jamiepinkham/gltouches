@@ -13,31 +13,118 @@
 @implementation GLTouchesViewController
 -(void)touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event
 {
-    NSLog(@"touches began");
-    [precisionTimer start];
-    UITouch  *touch = [[event allTouches] anyObject];
-    beginPoint = [touch locationInView:touch.view];
+    NSSet *allTouches = [event allTouches];
+    
+    switch ([allTouches count]) {
+        case 1: { //Single touch
+            
+            //Get the first touch.
+            UITouch *touch = [[allTouches allObjects] objectAtIndex:0];
+            
+            switch ([touch tapCount])
+            {
+                case 1: //Single Tap.
+                {
+                    [precisionTimer start];
+                    //Start a timer for 2 seconds.
+                    //timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self 
+                    //                                       selector:@selector(showAlertView:) userInfo:nil repeats:NO];
+                    
+                    //[timer retain];
+                } break;
+                case 2: {//Double tap. 
+                    
+                } break;
+            }
+        } break;
+        case 2: { //Double Touch
+            //Track the initial distance between two fingers.
+            UITouch *touch1 = [[allTouches allObjects] objectAtIndex:0];
+            UITouch *touch2 = [[allTouches allObjects] objectAtIndex:1];
+            
+            initialDistance = [self distanceBetweenTwoPoints:[touch1 locationInView:[self view]] 
+                                                     toPoint:[touch2 locationInView:[self view]]];
+            
+        } break;
+        default:
+            break;
+    }
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    NSSet *allTouches = [event allTouches];
+    
+    switch ([allTouches count])
+    {
+        case 1: {
+            
+        } break;
+        case 2: {
+            //The image is being zoomed in or out.
+            
+            UITouch *touch1 = [[allTouches allObjects] objectAtIndex:0];
+            UITouch *touch2 = [[allTouches allObjects] objectAtIndex:1];
+            
+            //Calculate the distance between the two fingers.
+            CGFloat finalDistance = [self distanceBetweenTwoPoints:[touch1 locationInView:[self view]]
+                                                           toPoint:[touch2 locationInView:[self view]]];
+            
+            //Check if zoom in or zoom out.
+            if(initialDistance > finalDistance) {
+                NSLog(@"Zoom Out");
+            } 
+            else {
+                NSLog(@"Zoom In");
+            }
+            
+        } break;
+    }
+    
+}
+
+- (CGFloat)distanceBetweenTwoPoints:(CGPoint)fromPoint toPoint:(CGPoint)toPoint {
+    
+    float x = toPoint.x - fromPoint.x;
+    float y = toPoint.y - fromPoint.y;
+    
+    return sqrt(x * x + y * y);
+}
+
+-(void)clearTouches{
+    initialDistance = -1;
 }
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    [self clearTouches];
+    NSSet *allTouches = [event allTouches];
+    switch ([allTouches count]) {
+        case 1:{
+            NSLog(@"%f = [precisionTimer elapsedSeconds]", [precisionTimer elapsedSeconds]);
+            UITouch *touch = [[event allTouches] anyObject];
+            endPoint = [touch locationInView:[touch view]];
+            CGPoint vector = CGPointMake(endPoint.x - beginPoint.x, beginPoint.y - endPoint.y);
+            NSLog(@"%f, %f = vector x, vector y", vector.x, vector.y);
+            float speed = (sqrt((vector.x * vector.x) + (vector.y * vector.y)) / [precisionTimer elapsedSeconds]);
+            NSLog(@"%f = acceleration", speed);
+            float m = sqrt((vector.x * vector.x) + (vector.y * vector.y));
+            if(0.0f != m){
+                float f = (speed / 100.0f) / m;
+                vector.x *= f;
+                vector.y *= f;
+            }
+            [self.view setCurrentSpinVector:vector];
+            
+        }
+            
+            break;
+        default:
+            break;
+    }
     NSLog(@"touches ended");
-    NSLog(@"%f = [precisionTimer elapsedSeconds]", [precisionTimer elapsedSeconds]);
-    UITouch *touch = [[event allTouches] anyObject];
-    endPoint = [touch locationInView:[touch view]];
-    CGPoint vector = CGPointMake(endPoint.x - beginPoint.x, beginPoint.y - endPoint.y);
-    
-    NSLog(@"%f, %f = vector x, vector y", vector.x, vector.y);
-    float speed = (sqrt((vector.x * vector.x) + (vector.y * vector.y)) / [precisionTimer elapsedSeconds]);
-    NSLog(@"%f = acceleration", speed);
-    float m = sqrt((vector.x * vector.x) + (vector.y * vector.y));
-	if(0.0f != m){
-		float f = (speed / 100.0f) / m;
-		vector.x *= f;
-		vector.y *= f;
-	}
-    [self.view setCurrentSpinVector:vector];
 }
+
 
 
 // The designated initializer. Override to perform setup that is required before the view is loaded.
