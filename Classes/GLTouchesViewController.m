@@ -11,6 +11,7 @@
 #import "GLTouchesViewController.h"
 
 @implementation GLTouchesViewController
+
 -(void)touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event
 {
     NSSet *allTouches = [event allTouches];
