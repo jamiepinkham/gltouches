@@ -74,14 +74,10 @@
             //Check if zoom in or zoom out.
 			
 			// dude what the fuck? I can't call a god damned method.
-			
-            if(initialDistance > finalDistance) {
-				[self.view addZoomFactor:(initialDistance-finalDistance)];
-            } 
-            else {
-                [self.view addZoomFactor:(finalDistance-initialDistance)];
-            }
-            
+			CGFloat dist = 0.0f;
+            NSLog(@"%f = dist initial > final", initialDistance - finalDistance);
+            dist = initialDistance - finalDistance;
+            [eglView addZoomFactor:dist / 100];
         } break;
     }
     
@@ -118,7 +114,7 @@
                 vector.x *= f;
                 vector.y *= f;
             }
-            [self.view setCurrentSpinVector:vector];
+            [eglView setCurrentSpinVector:vector];
             
         }
             
