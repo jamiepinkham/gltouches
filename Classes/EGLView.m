@@ -16,7 +16,6 @@
 @implementation EGLView
 
 @synthesize currentSpinVector;
-@synthesize zoomFactor;
 
 + (Class) layerClass
 {
@@ -215,6 +214,7 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
 
 -(void)addZoomFactor:(CGFloat)df{
 	zoomFactor+=df;
+    NSLog(@"%f = df",df);
 }
 
 - (void)dealloc {
