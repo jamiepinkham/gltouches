@@ -10,9 +10,6 @@
 
 @end
 
-
-
-
 @implementation EGLView
 
 @synthesize currentSpinVector;

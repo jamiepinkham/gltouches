@@ -77,7 +77,7 @@
 			CGFloat dist = 0.0f;
             NSLog(@"%f = dist initial > final", initialDistance - finalDistance);
             dist = initialDistance - finalDistance;
-            [eglView addZoomFactor:dist / 100];
+            [eglView addZoomFactor:dist / 300];
         } break;
     }
     
