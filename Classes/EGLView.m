@@ -181,6 +181,13 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
 		-0.5f,0.5f,0.5f
 	};
 	
+	static GLfloat faceTexCords[] = {
+		0.0f,0.0f,
+		1.0f,0.0f,
+		1.0f,1.0f,
+		0.0f,1.0f
+	};
+	
 	[EAGLContext setCurrentContext:context];
 	
 	glBindFramebufferOES(GL_FRAMEBUFFER_OES, viewFramebuffer);
@@ -188,15 +195,16 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
 	
 	glLoadIdentity();
 	
-	//glTranslatef(currentSpinRotation.x,0,0);
-	
 	float m = sqrt((currentSpinRotation.x*currentSpinRotation.x)+(currentSpinRotation.y*currentSpinRotation.y));
 	glRotatef(m,0,currentSpinRotation.x/m,currentSpinRotation.y/m);
 	glScalef(zoomFactor,zoomFactor,zoomFactor);
     
-	glEnableClientState(GL_VERTEX_ARRAY); 
+	glEnableClientState(GL_VERTEX_ARRAY);
+	glEnableClientState(GL_TEXTURE_COORD_ARRAY);
 	glVertexPointer(3, GL_FLOAT, 0, vertices);
+	glTexCoordPointer(2, GL_FLOAT, 0, faceTexCords);
 	glColor4f(1.0f,1.0f,1.0f,1.0f);
+	glBindTexture(GL_TEXTURE_2D,textureID);
 	for(unsigned int i = 0; i < 6; i++){
 		glDrawElements(GL_TRIANGLE_STRIP, 4, GL_UNSIGNED_BYTE, faces[i]);
 	}
