@@ -72,11 +72,14 @@
                                                            toPoint:[touch2 locationInView:[self view]]];
             
             //Check if zoom in or zoom out.
+			
+			// dude what the fuck? I can't call a god damned method.
+			
             if(initialDistance > finalDistance) {
-                NSLog(@"Zoom Out");
+				[self.view addZoomFactor:(initialDistance-finalDistance)];
             } 
             else {
-                NSLog(@"Zoom In");
+                [self.view addZoomFactor:(finalDistance-initialDistance)];
             }
             
         } break;
@@ -108,7 +111,7 @@
             CGPoint vector = CGPointMake(endPoint.x - beginPoint.x, beginPoint.y - endPoint.y);
             NSLog(@"%f, %f = vector x, vector y", vector.x, vector.y);
             float speed = (sqrt((vector.x * vector.x) + (vector.y * vector.y)) / [precisionTimer elapsedSeconds]);
-            NSLog(@"%f = acceleration", speed);
+            NSLog(@"%f = speed", speed);
             float m = sqrt((vector.x * vector.x) + (vector.y * vector.y));
             if(0.0f != m){
                 float f = (speed / 100.0f) / m;

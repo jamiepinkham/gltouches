@@ -16,6 +16,7 @@
 @implementation EGLView
 
 @synthesize currentSpinVector;
+@synthesize zoomFactor;
 
 + (Class) layerClass
 {
@@ -120,6 +121,7 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
 		
 		currentSpinVector = CGPointMake(1.0f,0.25f);
 		currentSpinRotation = CGPointMake(0.0f,0.0f);
+		zoomFactor = 0.5f;
 		
 		[self setupView];
 		
@@ -192,6 +194,7 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
 	
 	float m = sqrt((currentSpinRotation.x*currentSpinRotation.x)+(currentSpinRotation.y*currentSpinRotation.y));
 	glRotatef(m,0,currentSpinRotation.x/m,currentSpinRotation.y/m);
+	glScalef(zoomFactor,zoomFactor,zoomFactor);
     
 	glEnableClientState(GL_VERTEX_ARRAY); 
 	glVertexPointer(3, GL_FLOAT, 0, vertices);
@@ -208,6 +211,10 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
 
 -(void)setCubeTexture:(UIImage *)image{
 
+}
+
+-(void)addZoomFactor:(CGFloat)df{
+	zoomFactor+=df;
 }
 
 - (void)dealloc {

@@ -15,7 +15,7 @@
 @interface EGLView : UIView {
     
     CGPoint currentSpinVector;
-	
+	CGFloat zoomFactor;
     
 @private
 	
@@ -33,10 +33,12 @@
 }
 
 @property(nonatomic) CGPoint currentSpinVector;
+@property(nonatomic) CGFloat zoomFactor;
 
 -(void)updateView;
 -(void)setCubeTexture:(UIImage *)image;
 -(void)renderEAGL;
+-(void)addZoomFactor:(CGFloat)df;
 
 
 @end
