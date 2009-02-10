@@ -150,7 +150,7 @@
 //THIS IS THE METHOD CALLED WHEN SOMEONE IS DONE PICKING AN IMAGE
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo
 {
-	[self.view setCubeTexture:image];
+	[eglView setCubeTexture:image];
     //NSData *imageData = UIImagePNGRepresentation(image);
     
     //NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
