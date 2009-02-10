@@ -192,7 +192,7 @@
 
 
 - (void)dealloc {
-    [self.view dealloc];
+    [eglView dealloc];
     [imagePickerController dealloc];
     [precisionTimer dealloc];
     [super dealloc];
