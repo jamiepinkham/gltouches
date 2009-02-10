@@ -1,5 +1,6 @@
 #import <QuartzCore/QuartzCore.h>
 #import <OpenGLES/EAGLDrawable.h>
+#import <CoreGraphics/CoreGraphics.h>
 
 #import "EGLView.h"
 
@@ -206,7 +207,36 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
 }
 
 -(void)setCubeTexture:(UIImage *)image{
-
+    CGImageRef textureImage = image.CGImage;
+    size_t width = CGImageGetWidth(textureImage);
+    size_t height = CGImageGetHeight(textureImage);
+    if(textureImage){
+        GLubyte* textureData = (GLubyte *) malloc(width * height * 4);
+        CGContextRef textureContext = CGBitmapContextCreate(textureData, width, height, 8, width * 4, CGImageGetColorSpace(textureImage), kCGImageAlphaPremultipliedLast);
+        CGContextDrawImage(textureContext, CGRectMake(0,0,(CGFloat)width,(CGFloat)height), textureImage);
+        
+        CGContextRelease(textureContext);
+        
+        // Use OpenGL ES to generate a name for the texture.
+		glGenTextures(1, &imageTexture);
+		// Bind the texture name. 
+		glBindTexture(GL_TEXTURE_2D, imageTexture);
+		// Speidfy a 2D texture image, provideing the a pointer to the image data in memory
+		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, textureData);
+		// Release the image data
+		free(textureData);
+		
+		// Set the texture parameters to use a minifying filter and a linear filer (weighted average)
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+		
+		// Enable use of the texture
+		glEnable(GL_TEXTURE_2D);
+		// Set a blending function to use
+		glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
+		// Enable blending
+		glEnable(GL_BLEND);
+        
+    }
 }
 
 -(void)addZoomFactor:(CGFloat)df{
@@ -218,7 +248,6 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
         zoomFactor+=df;
     NSLog(@"%f = df",df);
 }
-
 - (void)dealloc {
     [super dealloc];
 }

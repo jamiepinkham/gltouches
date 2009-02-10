@@ -28,6 +28,7 @@
 	NSTimeInterval viewUpdateTimerInterval;
     CGPoint currentSpinRotation;
     CGFloat zoomFactor;
+    GLuint imageTexture;
 	
 }
 
