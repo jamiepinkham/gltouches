@@ -158,34 +158,50 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
 
 - (void)renderEAGL{
 	
-	// indicies or the faces
-
-	static GLubyte faces[6][4] = {
-		{2,1,3,0},
-		{5,6,4,7},
-		{6,2,7,3},
-		{1,5,0,4},
-		{3,0,7,4},
-		{6,5,2,1}
+	// 2 float => texture coordinate
+	// 3 float => vertex position
+	static const GLfloat vertices[] =
+	{
+		0.0f,0.0f,1.0,-1.0,1.0,         // 2
+		1.0f,0.0f,1.0,1.0,1.0,         // 6
+		0.0f,1.0f,-1.0,-1.0,1.0,      // 3
+		1.0f,1.0f,-1.0,1.0,1.0,         // 7
+		
+		0.0f,0.0f,-1.0,1.0,-1.0,      // 4
+		1.0f,0.0f,1.0,1.0,-1.0,         // 5
+		0.0f,1.0f,-1.0,-1.0,-1.0,      // 0
+		1.0f,1.0f,1.0,-1.0,-1.0,      // 1
+		
+		0.0f,0.0f,-1.0,1.0,1.0,         // 7
+		1.0f,0.0f,-1.0,1.0,-1.0,      // 4
+		0.0f,1.0f,-1.0,-1.0,1.0,      // 3
+		1.0f,1.0f,-1.0,-1.0,-1.0,      // 0
+		
+		0.0f,0.0f,1.0,-1.0,-1.0,      // 1
+		1.0f,0.0f,1.0,1.0,-1.0,         // 5
+		0.0f,1.0f,1.0,-1.0,1.0,         // 2
+		1.0f,1.0f,1.0,1.0,1.0,         // 6
+		
+		0.0f,0.0f,-1.0,1.0,-1.0,      // 4
+		1.0f,0.0f,-1.0,1.0,1.0,         // 7
+		0.0f,1.0f,1.0,1.0,-1.0,         // 5
+		1.0f,1.0f,1.0,1.0,1.0,         // 6
+		
+		0.0f,0.0f,-1.0,-1.0,1.0,      // 3
+		1.0f,0.0f,-1.0,-1.0,-1.0,      // 0
+		0.0f,1.0f,1.0,-1.0,1.0,         // 2
+		1.0f,1.0f,1.0,-1.0,-1.0,      // 1
 	};
 	
-	// points for the box
-	static GLfloat vertices[] = {
-		-0.5f,-0.5f,-0.5f,
-		0.5f,-0.5f,-0.5f,
-		0.5f,0.5f,-0.5f,
-		-0.5f,0.5f,-0.5f,
-		-0.5f,-0.5f,0.5f,
-		0.5f,-0.5f,0.5f,
-		0.5f,0.5f,0.5f,
-		-0.5f,0.5f,0.5f
-	};
-	
-	static GLfloat faceTexCords[] = {
-		0.0f,0.0f,
-		1.0f,0.0f,
-		1.0f,1.0f,
-		0.0f,1.0f
+	// Cube's faces (list of indexes)
+	static const GLubyte elements[] =
+	{
+		0,1,2,3,
+		4,5,6,7,
+		8,9,10,11,
+		12,13,14,15,
+		16,17,18,19,
+		20,21,22,23,
 	};
 	
 	[EAGLContext setCurrentContext:context];
@@ -201,14 +217,17 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
     
 	glEnableClientState(GL_VERTEX_ARRAY);
 	glEnableClientState(GL_TEXTURE_COORD_ARRAY);
-	glVertexPointer(3, GL_FLOAT, 0, vertices);
-	glTexCoordPointer(2, GL_FLOAT, 0, faceTexCords);
-	glColor4f(1.0f,1.0f,1.0f,1.0f);
+	glEnable(GL_TEXTURE_2D);
 	glBindTexture(GL_TEXTURE_2D,textureID);
+	
+	glTexCoordPointer(2, GL_FLOAT, 5*sizeof(GL_FLOAT), vertices);
+	glVertexPointer(3, GL_FLOAT, 5*sizeof(GL_FLOAT), vertices + 2);
+	
+	glColor4f(1.0f,1.0f,1.0f,1.0f);
 	for(unsigned int i = 0; i < 6; i++){
-		glDrawElements(GL_TRIANGLE_STRIP, 4, GL_UNSIGNED_BYTE, faces[i]);
+		glDrawElements(GL_TRIANGLE_STRIP, 4, GL_UNSIGNED_BYTE, elements + (i*4));
 	}
-	glDisableClientState(GL_VERTEX_ARRAY);
+	glFlush();
 	
 	glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewRenderbuffer);
 	[context presentRenderbuffer:GL_RENDERBUFFER_OES];
@@ -220,12 +239,22 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
     size_t width = CGImageGetWidth(textureImage);
     size_t height = CGImageGetHeight(textureImage);
     if(textureImage){
-        GLubyte* textureData = (GLubyte *) malloc(width * height * 4);
-        CGContextRef textureContext = CGBitmapContextCreate(textureData, width, height, 8, width * 4, CGImageGetColorSpace(textureImage), kCGImageAlphaPremultipliedLast);
-        CGContextDrawImage(textureContext, CGRectMake(0,0,(CGFloat)width,(CGFloat)height), textureImage);
         
+		// TODO: have the texture size be powers of two and down(its a mobile device) sample the image to fit
+		size_t newTextureWidth = width;
+		size_t newTextureHeight = height;
+		
+		GLubyte* textureData = (GLubyte *) malloc(newTextureWidth * newTextureHeight * 4);
+        CGContextRef textureContext = CGBitmapContextCreate(textureData, width, height, 8, width * 4, CGImageGetColorSpace(textureImage), kCGImageAlphaPremultipliedLast);
+        
+		
+		CGContextDrawImage(textureContext, CGRectMake(0,0,(CGFloat)width,(CGFloat)height), textureImage);
+        
+		
+		
         CGContextRelease(textureContext);
         
+		glEnable(GL_TEXTURE_2D);
         // Use OpenGL ES to generate a name for the texture.
 		glGenTextures(1, &textureID);
 		// Bind the texture name. 
@@ -239,11 +268,10 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 		
 		// Enable use of the texture
-		glEnable(GL_TEXTURE_2D);
 		// Set a blending function to use
-		glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
+		//glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
 		// Enable blending
-		glEnable(GL_BLEND);
+		//glEnable(GL_BLEND);
         
     }
 }

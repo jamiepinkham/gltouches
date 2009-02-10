@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>ActivePerspectiveName</key>
-	<string>Debug</string>
+	<string>Project</string>
 	<key>AllowedModules</key>
 	<array>
 		<dict>
@@ -300,7 +300,6 @@
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>FD26A1D20F40D753002ECAEF</string>
-								<string>E2644B35053B69B200211256</string>
 								<string>1C77FABC04509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
@@ -329,6 +328,8 @@
 							<string>MainColumn</string>
 							<real>250</real>
 						</array>
+						<key>RubberWindowFrame</key>
+						<string>0 57 1280 719 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -339,6 +340,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -356,7 +359,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>FD26A2CB0F4226E2002ECAEF</string>
+										<string>FD26A2E60F422F17002ECAEF</string>
 										<key>history</key>
 										<array>
 											<string>FD26A1D30F40D753002ECAEF</string>
@@ -367,7 +370,7 @@
 											<string>FD26A2A40F4223E9002ECAEF</string>
 											<string>FD26A2A50F4223E9002ECAEF</string>
 											<string>FD26A2BC0F422646002ECAEF</string>
-											<string>FD26A2C60F4226BE002ECAEF</string>
+											<string>FD26A2E30F422E4D002ECAEF</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -457,6 +460,8 @@
 							<dict>
 								<key>Frame</key>
 								<string>{{0, 0}, {986, 471}}</string>
+								<key>RubberWindowFrame</key>
+								<string>0 57 1280 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -480,6 +485,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {986, 175}}</string>
+										<key>RubberWindowFrame</key>
+										<string>0 57 1280 719 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -636,8 +643,6 @@
 					<dict>
 						<key>Frame</key>
 						<string>{{0, 0}, {1280, 202}}</string>
-						<key>RubberWindowFrame</key>
-						<string>0 58 1280 719 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
@@ -712,11 +717,7 @@
 							</array>
 							<key>Frame</key>
 							<string>{{625, 0}, {655, 230}}</string>
-							<key>RubberWindowFrame</key>
-							<string>0 58 1280 719 0 0 1280 778 </string>
 						</dict>
-						<key>RubberWindowFrame</key>
-						<string>0 58 1280 719 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>
@@ -761,7 +762,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>255993570.391381</real>
+	<real>255995671.59877899</real>
 	<key>ToolbarDisplayMode</key>
 	<integer>1</integer>
 	<key>ToolbarIsVisible</key>
@@ -776,15 +777,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>FD26A2CC0F4226E2002ECAEF</string>
-		<string>FD26A2C90F4226C9002ECAEF</string>
 		<string>FD26A2C10F422646002ECAEF</string>
 		<string>FD26A23D0F41433A002ECAEF</string>
 		<string>FD26A2390F41431D002ECAEF</string>
 		<string>/Users/aarondandy/Desktop/dev/Mediocresoft iPhone/GLTouches/GLTouches.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>0 58 1280 719 0 0 1280 778 </string>
+	<string>0 57 1280 719 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
