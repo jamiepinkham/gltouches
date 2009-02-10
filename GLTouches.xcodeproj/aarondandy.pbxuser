@@ -23,15 +23,15 @@
 	28D7ACF60DDB3853001CB0EB /* GLTouchesViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {925, 641}}";
-			sepNavSelRange = "{152, 0}";
-			sepNavVisRange = "{0, 733}";
+			sepNavSelRange = "{651, 0}";
+			sepNavVisRange = "{0, 792}";
 		};
 	};
 	28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {836, 2980}}";
-			sepNavSelRange = "{2678, 0}";
-			sepNavVisRange = "{1900, 1116}";
+			sepNavIntBoundsRect = "{{0, 0}, {1219, 2854}}";
+			sepNavSelRange = "{2710, 0}";
+			sepNavVisRange = "{2044, 756}";
 			sepNavWindowFrame = "{{15, 110}, {895, 663}}";
 		};
 	};
@@ -40,7 +40,6 @@
 		activeExecutable = FD8235350F3EB05E00AB6DC3 /* GLTouches */;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* GLTouches */;
 		breakpoints = (
-			FD26A2470F414411002ECAEF /* GLTouchesViewController.m:79 */,
 		);
 		codeSenseManager = FD82355B0F3EB06700AB6DC3 /* Code sense */;
 		executables = (
@@ -239,6 +238,34 @@
 			FD26A2650F4144D5002ECAEF /* PBXTextBookmark */ = FD26A2650F4144D5002ECAEF /* PBXTextBookmark */;
 			FD26A2660F4144D5002ECAEF /* PBXTextBookmark */ = FD26A2660F4144D5002ECAEF /* PBXTextBookmark */;
 			FD26A2670F4144D5002ECAEF /* PBXTextBookmark */ = FD26A2670F4144D5002ECAEF /* PBXTextBookmark */;
+			FD26A26E0F421F5C002ECAEF /* PBXTextBookmark */ = FD26A26E0F421F5C002ECAEF /* PBXTextBookmark */;
+			FD26A26F0F421F5C002ECAEF /* PBXTextBookmark */ = FD26A26F0F421F5C002ECAEF /* PBXTextBookmark */;
+			FD26A2700F421F5C002ECAEF /* PBXTextBookmark */ = FD26A2700F421F5C002ECAEF /* PBXTextBookmark */;
+			FD26A2720F421F76002ECAEF /* PBXTextBookmark */ = FD26A2720F421F76002ECAEF /* PBXTextBookmark */;
+			FD26A2730F421F7A002ECAEF /* PBXTextBookmark */ = FD26A2730F421F7A002ECAEF /* PBXTextBookmark */;
+			FD26A2740F421F7A002ECAEF /* PBXTextBookmark */ = FD26A2740F421F7A002ECAEF /* PBXTextBookmark */;
+			FD26A2750F421F7A002ECAEF /* PBXTextBookmark */ = FD26A2750F421F7A002ECAEF /* PBXTextBookmark */;
+			FD26A2770F421FA6002ECAEF /* PBXTextBookmark */ = FD26A2770F421FA6002ECAEF /* PBXTextBookmark */;
+			FD26A2880F42215D002ECAEF /* PBXTextBookmark */ = FD26A2880F42215D002ECAEF /* PBXTextBookmark */;
+			FD26A2890F42215D002ECAEF /* PBXTextBookmark */ = FD26A2890F42215D002ECAEF /* PBXTextBookmark */;
+			FD26A28A0F42215D002ECAEF /* PBXTextBookmark */ = FD26A28A0F42215D002ECAEF /* PBXTextBookmark */;
+			FD26A28B0F42215D002ECAEF /* PBXTextBookmark */ = FD26A28B0F42215D002ECAEF /* PBXTextBookmark */;
+			FD26A28C0F42215D002ECAEF /* PBXTextBookmark */ = FD26A28C0F42215D002ECAEF /* PBXTextBookmark */;
+			FD26A28D0F42215D002ECAEF /* PBXTextBookmark */ = FD26A28D0F42215D002ECAEF /* PBXTextBookmark */;
+			FD26A28E0F42215D002ECAEF /* PBXTextBookmark */ = FD26A28E0F42215D002ECAEF /* PBXTextBookmark */;
+			FD26A28F0F42215D002ECAEF /* PBXTextBookmark */ = FD26A28F0F42215D002ECAEF /* PBXTextBookmark */;
+			FD26A2900F42215D002ECAEF /* PBXTextBookmark */ = FD26A2900F42215D002ECAEF /* PBXTextBookmark */;
+			FD26A2910F42215D002ECAEF /* PBXTextBookmark */ = FD26A2910F42215D002ECAEF /* PBXTextBookmark */;
+			FD26A2920F42215D002ECAEF /* PBXTextBookmark */ = FD26A2920F42215D002ECAEF /* PBXTextBookmark */;
+			FD26A2930F42215D002ECAEF /* PBXTextBookmark */ = FD26A2930F42215D002ECAEF /* PBXTextBookmark */;
+			FD26A2940F42215D002ECAEF /* PBXTextBookmark */ = FD26A2940F42215D002ECAEF /* PBXTextBookmark */;
+			FD26A2950F42215D002ECAEF /* PBXTextBookmark */ = FD26A2950F42215D002ECAEF /* PBXTextBookmark */;
+			FD26A2960F42215D002ECAEF /* PBXTextBookmark */ = FD26A2960F42215D002ECAEF /* PBXTextBookmark */;
+			FD26A2970F42215D002ECAEF /* PBXTextBookmark */ = FD26A2970F42215D002ECAEF /* PBXTextBookmark */;
+			FD26A2980F42215D002ECAEF /* PBXTextBookmark */ = FD26A2980F42215D002ECAEF /* PBXTextBookmark */;
+			FD26A2990F42215D002ECAEF /* PBXTextBookmark */ = FD26A2990F42215D002ECAEF /* PBXTextBookmark */;
+			FD26A29A0F42215D002ECAEF /* PBXTextBookmark */ = FD26A29A0F42215D002ECAEF /* PBXTextBookmark */;
+			FD26A29B0F42215D002ECAEF /* PBXTextBookmark */ = FD26A29B0F42215D002ECAEF /* PBXTextBookmark */;
 			FDD9521B0F40D2A5004A7A0F = FDD9521B0F40D2A5004A7A0F /* PBXTextBookmark */;
 			FDED0B100F3EB4A300021072 = FDED0B100F3EB4A300021072 /* PBXTextBookmark */;
 			FDED0B110F3EB4A300021072 = FDED0B110F3EB4A300021072 /* PBXTextBookmark */;
@@ -259,17 +286,17 @@
 	};
 	E827D6730F3E7445006E30D3 /* EGLView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1219, 644}}";
-			sepNavSelRange = "{423, 0}";
-			sepNavVisRange = "{334, 222}";
+			sepNavIntBoundsRect = "{{0, 0}, {925, 630}}";
+			sepNavSelRange = "{414, 0}";
+			sepNavVisRange = "{245, 527}";
 			sepNavWindowFrame = "{{15, 110}, {895, 663}}";
 		};
 	};
 	E827D6740F3E7445006E30D3 /* EGLView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {836, 3248}}";
-			sepNavSelRange = "{239, 24}";
-			sepNavVisRange = "{0, 614}";
+			sepNavIntBoundsRect = "{{0, 0}, {1032, 3556}}";
+			sepNavSelRange = "{5880, 0}";
+			sepNavVisRange = "{5224, 1305}";
 			sepNavWindowFrame = "{{38, 89}, {895, 663}}";
 		};
 	};
@@ -285,7 +312,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 66";
 		rLen = 0;
-		rLoc = 2166;
+		rLoc = 2211;
 		rType = 0;
 		vrLen = 1081;
 		vrLoc = 1955;
@@ -295,7 +322,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 66";
 		rLen = 0;
-		rLoc = 2166;
+		rLoc = 2211;
 		rType = 0;
 		vrLen = 1081;
 		vrLoc = 1955;
@@ -331,7 +358,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 66";
 		rLen = 0;
-		rLoc = 2166;
+		rLoc = 2211;
 		rType = 0;
 		vrLen = 1081;
 		vrLoc = 1955;
@@ -499,7 +526,7 @@
 		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
 		name = "EGLView.m: 206";
 		rLen = 0;
-		rLoc = 4901;
+		rLoc = 4925;
 		rType = 0;
 		vrLen = 604;
 		vrLoc = 3626;
@@ -509,7 +536,7 @@
 		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
 		name = "EGLView.m: 157";
 		rLen = 0;
-		rLoc = 3698;
+		rLoc = 3722;
 		rType = 0;
 		vrLen = 556;
 		vrLoc = 3236;
@@ -519,7 +546,7 @@
 		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
 		name = "EGLView.m: 122";
 		rLen = 0;
-		rLoc = 2958;
+		rLoc = 2982;
 		rType = 0;
 		vrLen = 1107;
 		vrLoc = 2323;
@@ -529,7 +556,7 @@
 		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
 		name = "EGLView.m: 122";
 		rLen = 0;
-		rLoc = 2958;
+		rLoc = 2982;
 		rType = 0;
 		vrLen = 1107;
 		vrLoc = 2323;
@@ -543,7 +570,7 @@
 		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
 		name = "EGLView.m: 122";
 		rLen = 0;
-		rLoc = 2958;
+		rLoc = 2982;
 		rType = 0;
 		vrLen = 529;
 		vrLoc = 3571;
@@ -553,7 +580,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 32";
 		rLen = 0;
-		rLoc = 551;
+		rLoc = 558;
 		rType = 0;
 		vrLen = 656;
 		vrLoc = 0;
@@ -563,7 +590,7 @@
 		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
 		name = "EGLView.m: 160";
 		rLen = 0;
-		rLoc = 3907;
+		rLoc = 3931;
 		rType = 0;
 		vrLen = 436;
 		vrLoc = 0;
@@ -583,7 +610,7 @@
 		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
 		name = "EGLView.m: 160";
 		rLen = 0;
-		rLoc = 3907;
+		rLoc = 3931;
 		rType = 0;
 		vrLen = 436;
 		vrLoc = 0;
@@ -593,7 +620,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 36";
 		rLen = 0;
-		rLoc = 645;
+		rLoc = 668;
 		rType = 0;
 		vrLen = 733;
 		vrLoc = 0;
@@ -603,7 +630,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 36";
 		rLen = 0;
-		rLoc = 645;
+		rLoc = 668;
 		rType = 0;
 		vrLen = 733;
 		vrLoc = 0;
@@ -613,7 +640,7 @@
 		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
 		name = "EGLView.m: 160";
 		rLen = 0;
-		rLoc = 3907;
+		rLoc = 3931;
 		rType = 0;
 		vrLen = 1080;
 		vrLoc = 0;
@@ -623,7 +650,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 36";
 		rLen = 0;
-		rLoc = 645;
+		rLoc = 668;
 		rType = 0;
 		vrLen = 733;
 		vrLoc = 0;
@@ -633,7 +660,7 @@
 		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
 		name = "EGLView.m: 196";
 		rLen = 0;
-		rLoc = 4710;
+		rLoc = 4734;
 		rType = 0;
 		vrLen = 1051;
 		vrLoc = 4121;
@@ -643,7 +670,7 @@
 		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
 		name = "EGLView.m: 123";
 		rLen = 0;
-		rLoc = 2988;
+		rLoc = 3012;
 		rType = 0;
 		vrLen = 1345;
 		vrLoc = 2224;
@@ -663,7 +690,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 118";
 		rLen = 20;
-		rLoc = 4073;
+		rLoc = 4088;
 		rType = 0;
 		vrLen = 1515;
 		vrLoc = 3251;
@@ -673,7 +700,7 @@
 		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
 		name = "EGLView.m: 123";
 		rLen = 0;
-		rLoc = 2988;
+		rLoc = 3012;
 		rType = 0;
 		vrLen = 1012;
 		vrLoc = 4160;
@@ -683,7 +710,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 36";
 		rLen = 0;
-		rLoc = 645;
+		rLoc = 668;
 		rType = 0;
 		vrLen = 733;
 		vrLoc = 0;
@@ -693,7 +720,7 @@
 		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
 		name = "EGLView.m: 123";
 		rLen = 0;
-		rLoc = 2988;
+		rLoc = 3012;
 		rType = 0;
 		vrLen = 1062;
 		vrLoc = 2946;
@@ -713,7 +740,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 76";
 		rLen = 0;
-		rLoc = 2678;
+		rLoc = 2712;
 		rType = 0;
 		vrLen = 1693;
 		vrLoc = 1948;
@@ -723,7 +750,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 36";
 		rLen = 0;
-		rLoc = 645;
+		rLoc = 668;
 		rType = 0;
 		vrLen = 733;
 		vrLoc = 0;
@@ -733,7 +760,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 76";
 		rLen = 0;
-		rLoc = 2678;
+		rLoc = 2712;
 		rType = 0;
 		vrLen = 1301;
 		vrLoc = 1844;
@@ -743,7 +770,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 36";
 		rLen = 0;
-		rLoc = 645;
+		rLoc = 668;
 		rType = 0;
 		vrLen = 733;
 		vrLoc = 0;
@@ -753,7 +780,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 76";
 		rLen = 0;
-		rLoc = 2678;
+		rLoc = 2712;
 		rType = 0;
 		vrLen = 1314;
 		vrLoc = 1844;
@@ -773,7 +800,7 @@
 		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
 		name = "EGLView.m: 123";
 		rLen = 0;
-		rLoc = 2988;
+		rLoc = 3012;
 		rType = 0;
 		vrLen = 1080;
 		vrLoc = 0;
@@ -783,7 +810,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 36";
 		rLen = 0;
-		rLoc = 645;
+		rLoc = 668;
 		rType = 0;
 		vrLen = 733;
 		vrLoc = 0;
@@ -793,7 +820,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 118";
 		rLen = 20;
-		rLoc = 4073;
+		rLoc = 4088;
 		rType = 0;
 		vrLen = 1515;
 		vrLoc = 3251;
@@ -803,7 +830,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 36";
 		rLen = 0;
-		rLoc = 645;
+		rLoc = 668;
 		rType = 0;
 		vrLen = 733;
 		vrLoc = 0;
@@ -813,7 +840,7 @@
 		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
 		name = "EGLView.m: 123";
 		rLen = 0;
-		rLoc = 2988;
+		rLoc = 3012;
 		rType = 0;
 		vrLen = 1012;
 		vrLoc = 4160;
@@ -823,7 +850,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 36";
 		rLen = 0;
-		rLoc = 645;
+		rLoc = 668;
 		rType = 0;
 		vrLen = 554;
 		vrLoc = 0;
@@ -833,7 +860,7 @@
 		comments = "error: incompatible types in initialization";
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		rLen = 0;
-		rLoc = 77;
+		rLoc = 78;
 		rType = 1;
 	};
 	FD26A2200F41430B002ECAEF /* PBXBookmark */ = {
@@ -855,7 +882,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 79";
 		rLen = 0;
-		rLoc = 2787;
+		rLoc = 2802;
 		rType = 0;
 		vrLen = 1082;
 		vrLoc = 1900;
@@ -865,7 +892,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 35";
 		rLen = 0;
-		rLoc = 570;
+		rLoc = 558;
 		rType = 0;
 		vrLen = 590;
 		vrLoc = 136;
@@ -875,7 +902,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 36";
 		rLen = 0;
-		rLoc = 645;
+		rLoc = 668;
 		rType = 0;
 		vrLen = 554;
 		vrLoc = 0;
@@ -885,7 +912,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 76";
 		rLen = 0;
-		rLoc = 2678;
+		rLoc = 2712;
 		rType = 0;
 		vrLen = 968;
 		vrLoc = 1930;
@@ -895,7 +922,7 @@
 		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
 		name = "EGLView.m: 123";
 		rLen = 0;
-		rLoc = 2988;
+		rLoc = 3012;
 		rType = 0;
 		vrLen = 920;
 		vrLoc = 4160;
@@ -905,7 +932,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 35";
 		rLen = 0;
-		rLoc = 570;
+		rLoc = 558;
 		rType = 0;
 		vrLen = 733;
 		vrLoc = 0;
@@ -925,7 +952,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 35";
 		rLen = 0;
-		rLoc = 570;
+		rLoc = 558;
 		rType = 0;
 		vrLen = 733;
 		vrLoc = 0;
@@ -935,7 +962,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 76";
 		rLen = 0;
-		rLoc = 2678;
+		rLoc = 2712;
 		rType = 0;
 		vrLen = 932;
 		vrLoc = 1795;
@@ -945,7 +972,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 35";
 		rLen = 0;
-		rLoc = 570;
+		rLoc = 558;
 		rType = 0;
 		vrLen = 567;
 		vrLoc = 160;
@@ -965,7 +992,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 35";
 		rLen = 0;
-		rLoc = 570;
+		rLoc = 558;
 		rType = 0;
 		vrLen = 566;
 		vrLoc = 160;
@@ -985,7 +1012,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 79";
 		rLen = 0;
-		rLoc = 2787;
+		rLoc = 2802;
 		rType = 0;
 		vrLen = 1082;
 		vrLoc = 1900;
@@ -995,7 +1022,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 41";
 		rLen = 33;
-		rLoc = 725;
+		rLoc = 748;
 		rType = 0;
 		vrLen = 546;
 		vrLoc = 214;
@@ -1005,7 +1032,7 @@
 		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
 		name = "EGLView.m: 217";
 		rLen = 0;
-		rLoc = 5198;
+		rLoc = 5222;
 		rType = 0;
 		vrLen = 982;
 		vrLoc = 4259;
@@ -1015,7 +1042,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 75";
 		rLen = 0;
-		rLoc = 2678;
+		rLoc = 2712;
 		rType = 0;
 		vrLen = 1106;
 		vrLoc = 1876;
@@ -1025,7 +1052,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 41";
 		rLen = 33;
-		rLoc = 725;
+		rLoc = 748;
 		rType = 0;
 		vrLen = 546;
 		vrLoc = 214;
@@ -1035,7 +1062,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 41";
 		rLen = 33;
-		rLoc = 725;
+		rLoc = 748;
 		rType = 0;
 		vrLen = 485;
 		vrLoc = 282;
@@ -1055,7 +1082,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 26";
 		rLen = 0;
-		rLoc = 423;
+		rLoc = 456;
 		rType = 0;
 		vrLen = 323;
 		vrLoc = 383;
@@ -1065,7 +1092,7 @@
 		comments = "error: no declaration of property 'zoomFactor' found in the interface";
 		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
 		rLen = 0;
-		rLoc = 17;
+		rLoc = 18;
 		rType = 1;
 	};
 	FD26A2450F4143D7002ECAEF /* PBXTextBookmark */ = {
@@ -1076,29 +1103,12 @@
 		rLoc = 78;
 		rType = 1;
 	};
-	FD26A2470F414411002ECAEF /* GLTouchesViewController.m:79 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
-		functionName = "-touchesMoved:withEvent:";
-		hitCount = 1;
-		ignoreCount = 0;
-		lineNumber = 79;
-		location = GLTouches;
-		modificationTime = 255935514.861017;
-		state = 1;
-	};
 	FD26A2490F414415002ECAEF /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 18";
 		rLen = 0;
-		rLoc = 330;
+		rLoc = 351;
 		rType = 0;
 		vrLen = 767;
 		vrLoc = 0;
@@ -1118,7 +1128,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 67";
 		rLen = 0;
-		rLoc = 2048;
+		rLoc = 2093;
 		rType = 0;
 		vrLen = 1395;
 		vrLoc = 1900;
@@ -1128,7 +1138,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 26";
 		rLen = 0;
-		rLoc = 423;
+		rLoc = 456;
 		rType = 0;
 		vrLen = 521;
 		vrLoc = 246;
@@ -1138,7 +1148,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 77";
 		rLen = 0;
-		rLoc = 2706;
+		rLoc = 2712;
 		rType = 0;
 		vrLen = 1018;
 		vrLoc = 1948;
@@ -1158,7 +1168,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 35";
 		rLen = 0;
-		rLoc = 645;
+		rLoc = 668;
 		rType = 0;
 		vrLen = 481;
 		vrLoc = 245;
@@ -1178,7 +1188,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 67";
 		rLen = 0;
-		rLoc = 2048;
+		rLoc = 2093;
 		rType = 0;
 		vrLen = 1395;
 		vrLoc = 1900;
@@ -1198,7 +1208,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 18";
 		rLen = 0;
-		rLoc = 330;
+		rLoc = 351;
 		rType = 0;
 		vrLen = 767;
 		vrLoc = 0;
@@ -1218,7 +1228,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 76";
 		rLen = 0;
-		rLoc = 2678;
+		rLoc = 2712;
 		rType = 0;
 		vrLen = 1473;
 		vrLoc = 1900;
@@ -1228,7 +1238,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 76";
 		rLen = 0;
-		rLoc = 2678;
+		rLoc = 2712;
 		rType = 0;
 		vrLen = 1104;
 		vrLoc = 1900;
@@ -1248,7 +1258,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 76";
 		rLen = 0;
-		rLoc = 2678;
+		rLoc = 2712;
 		rType = 0;
 		vrLen = 1224;
 		vrLoc = 1900;
@@ -1258,7 +1268,7 @@
 		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
 		name = "EGLView.h: 26";
 		rLen = 0;
-		rLoc = 423;
+		rLoc = 456;
 		rType = 0;
 		vrLen = 222;
 		vrLoc = 334;
@@ -1268,7 +1278,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 75";
 		rLen = 0;
-		rLoc = 2591;
+		rLoc = 2663;
 		rType = 0;
 		vrLen = 329;
 		vrLoc = 2441;
@@ -1288,7 +1298,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 76";
 		rLen = 0;
-		rLoc = 2630;
+		rLoc = 2702;
 		rType = 0;
 		vrLen = 1263;
 		vrLoc = 1720;
@@ -1298,7 +1308,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 76";
 		rLen = 0;
-		rLoc = 2630;
+		rLoc = 2702;
 		rType = 0;
 		vrLen = 1263;
 		vrLoc = 1720;
@@ -1318,7 +1328,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 76";
 		rLen = 0;
-		rLoc = 2561;
+		rLoc = 2606;
 		rType = 0;
 		vrLen = 1212;
 		vrLoc = 1839;
@@ -1328,7 +1338,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 79";
 		rLen = 0;
-		rLoc = 2678;
+		rLoc = 2712;
 		rType = 0;
 		vrLen = 1116;
 		vrLoc = 1900;
@@ -1343,6 +1353,286 @@
 		vrLen = 614;
 		vrLoc = 0;
 	};
+	FD26A26E0F421F5C002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
+		name = "GLTouchesViewController.m: 78";
+		rLen = 0;
+		rLoc = 2710;
+		rType = 0;
+		vrLen = 1298;
+		vrLoc = 1795;
+	};
+	FD26A26F0F421F5C002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
+		name = "GLTouchesViewController.m: 201";
+		rLen = 0;
+		rLoc = 6486;
+		rType = 0;
+		vrLen = 1118;
+		vrLoc = 1948;
+	};
+	FD26A2700F421F5C002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
+		name = "EGLView.m: 257";
+		rLen = 0;
+		rLoc = 6790;
+		rType = 0;
+		vrLen = 898;
+		vrLoc = 0;
+	};
+	FD26A2720F421F76002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
+		name = "GLTouchesViewController.m: 78";
+		rLen = 0;
+		rLoc = 2710;
+		rType = 0;
+		vrLen = 1376;
+		vrLoc = 1795;
+	};
+	FD26A2730F421F7A002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
+		name = "GLTouchesViewController.m: 78";
+		rLen = 0;
+		rLoc = 2710;
+		rType = 0;
+		vrLen = 1347;
+		vrLoc = 1790;
+	};
+	FD26A2740F421F7A002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
+		name = "GLTouchesViewController.m: 201";
+		rLen = 0;
+		rLoc = 6486;
+		rType = 0;
+		vrLen = 1240;
+		vrLoc = 1948;
+	};
+	FD26A2750F421F7A002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
+		name = "EGLView.m: 257";
+		rLen = 0;
+		rLoc = 6790;
+		rType = 0;
+		vrLen = 898;
+		vrLoc = 0;
+	};
+	FD26A2770F421FA6002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
+		name = "GLTouchesViewController.m: 78";
+		rLen = 0;
+		rLoc = 2710;
+		rType = 0;
+		vrLen = 498;
+		vrLoc = 2336;
+	};
+	FD26A2880F42215D002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* GLTouchesViewController.h */;
+		name = "GLTouchesViewController.h: 28";
+		rLen = 0;
+		rLoc = 651;
+		rType = 0;
+		vrLen = 792;
+		vrLoc = 0;
+	};
+	FD26A2890F42215D002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
+		name = "GLTouchesViewController.m: 48";
+		rLen = 0;
+		rLoc = 1679;
+		rType = 0;
+		vrLen = 1184;
+		vrLoc = 1197;
+	};
+	FD26A28A0F42215D002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
+		name = "EGLView.h: 25";
+		rLen = 0;
+		rLoc = 414;
+		rType = 0;
+		vrLen = 527;
+		vrLoc = 245;
+	};
+	FD26A28B0F42215D002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
+		name = "EGLView.m: 222";
+		rLen = 13;
+		rLoc = 5819;
+		rType = 0;
+		vrLen = 1359;
+		vrLoc = 5136;
+	};
+	FD26A28C0F42215D002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
+		name = "GLTouchesViewController.m: 79";
+		rLen = 0;
+		rLoc = 2738;
+		rType = 0;
+		vrLen = 1445;
+		vrLoc = 1723;
+	};
+	FD26A28D0F42215D002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
+		name = "EGLView.h: 35";
+		rLen = 0;
+		rLoc = 650;
+		rType = 0;
+		vrLen = 785;
+		vrLoc = 0;
+	};
+	FD26A28E0F42215D002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
+		name = "EGLView.m: 17";
+		rLen = 0;
+		rLoc = 298;
+		rType = 0;
+		vrLen = 1122;
+		vrLoc = 34;
+	};
+	FD26A28F0F42215D002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
+		name = "GLTouchesViewController.m: 69";
+		rLen = 0;
+		rLoc = 2213;
+		rType = 0;
+		vrLen = 1378;
+		vrLoc = 1790;
+	};
+	FD26A2900F42215D002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
+		name = "EGLView.h: 8";
+		rLen = 0;
+		rLoc = 135;
+		rType = 0;
+		vrLen = 785;
+		vrLoc = 0;
+	};
+	FD26A2910F42215D002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
+		name = "EGLView.m: 12";
+		rLen = 0;
+		rLoc = 217;
+		rType = 0;
+		vrLen = 1121;
+		vrLoc = 34;
+	};
+	FD26A2920F42215D002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
+		name = "GLTouchesViewController.m: 69";
+		rLen = 0;
+		rLoc = 2213;
+		rType = 0;
+		vrLen = 1570;
+		vrLoc = 153;
+	};
+	FD26A2930F42215D002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* GLTouchesViewController.h */;
+		name = "GLTouchesViewController.h: 28";
+		rLen = 0;
+		rLoc = 651;
+		rType = 0;
+		vrLen = 792;
+		vrLoc = 0;
+	};
+	FD26A2940F42215D002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
+		name = "GLTouchesViewController.m: 79";
+		rLen = 0;
+		rLoc = 2712;
+		rType = 0;
+		vrLen = 978;
+		vrLoc = 1080;
+	};
+	FD26A2950F42215D002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
+		name = "EGLView.h: 18";
+		rLen = 21;
+		rLoc = 313;
+		rType = 0;
+		vrLen = 550;
+		vrLoc = 0;
+	};
+	FD26A2960F42215D002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
+		name = "GLTouchesViewController.m: 48";
+		rLen = 45;
+		rLoc = 1648;
+		rType = 0;
+		vrLen = 828;
+		vrLoc = 1166;
+	};
+	FD26A2970F42215D002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
+		name = "EGLView.h: 34";
+		rLen = 0;
+		rLoc = 631;
+		rType = 0;
+		vrLen = 546;
+		vrLoc = 214;
+	};
+	FD26A2980F42215D002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
+		name = "GLTouchesViewController.m: 48";
+		rLen = 0;
+		rLoc = 1679;
+		rType = 0;
+		vrLen = 1184;
+		vrLoc = 1197;
+	};
+	FD26A2990F42215D002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
+		name = "EGLView.m: 222";
+		rLen = 13;
+		rLoc = 5819;
+		rType = 0;
+		vrLen = 1359;
+		vrLoc = 5136;
+	};
+	FD26A29A0F42215D002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E827D6730F3E7445006E30D3 /* EGLView.h */;
+		name = "EGLView.h: 25";
+		rLen = 0;
+		rLoc = 414;
+		rType = 0;
+		vrLen = 527;
+		vrLoc = 245;
+	};
+	FD26A29B0F42215D002ECAEF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
+		name = "EGLView.m: 224";
+		rLen = 0;
+		rLoc = 5880;
+		rType = 0;
+		vrLen = 1305;
+		vrLoc = 5224;
+	};
 	FD8235350F3EB05E00AB6DC3 /* GLTouches */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -1350,7 +1640,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 1;
+		breakpointsEnabled = 0;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -1388,7 +1678,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 66";
 		rLen = 0;
-		rLoc = 2166;
+		rLoc = 2211;
 		rType = 0;
 		vrLen = 1532;
 		vrLoc = 1955;
@@ -1438,7 +1728,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 72";
 		rLen = 0;
-		rLoc = 2682;
+		rLoc = 2712;
 		rType = 0;
 		vrLen = 1515;
 		vrLoc = 1394;
@@ -1498,7 +1788,7 @@
 		fRef = E827D6740F3E7445006E30D3 /* EGLView.m */;
 		name = "EGLView.m: 204";
 		rLen = 0;
-		rLoc = 4901;
+		rLoc = 4925;
 		rType = 0;
 		vrLen = 236;
 		vrLoc = 3741;
@@ -1508,7 +1798,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* GLTouchesViewController.m */;
 		name = "GLTouchesViewController.m: 66";
 		rLen = 0;
-		rLoc = 2166;
+		rLoc = 2211;
 		rType = 0;
 		vrLen = 687;
 		vrLoc = 1956;

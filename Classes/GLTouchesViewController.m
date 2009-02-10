@@ -45,6 +45,7 @@
             
             initialDistance = [self distanceBetweenTwoPoints:[touch1 locationInView:[self view]] 
                                                      toPoint:[touch2 locationInView:[self view]]];
+			initialZoomFactor = [eglView zoomFactor];
             
         } break;
         default:
@@ -74,10 +75,9 @@
             //Check if zoom in or zoom out.
 			
 			// dude what the fuck? I can't call a god damned method.
-			CGFloat dist = 0.0f;
-            NSLog(@"%f = dist initial > final", initialDistance - finalDistance);
-            dist = initialDistance - finalDistance;
-            [eglView addZoomFactor:dist / 300];
+			CGFloat dist = initialDistance - finalDistance;
+            NSLog(@"%f = dist initial > final", dist);
+            [eglView setZoomFactor: initialZoomFactor+(dist / 300) ];
         } break;
     }
     

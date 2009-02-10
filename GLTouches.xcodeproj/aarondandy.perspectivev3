@@ -222,88 +222,7 @@
 		</dict>
 	</array>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>FD26A2560F414415002ECAEF</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>GLTouchesViewController.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>FD26A2570F414415002ECAEF</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>GLTouchesViewController.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>FD26A2660F4144D5002ECAEF</string>
-						<key>history</key>
-						<array>
-							<string>FD26A2450F4143D7002ECAEF</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {895, 575}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>15 157 895 616 0 0 1280 778 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>FD26A2590F414415002ECAEF</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>EGLView.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>FD26A25A0F414415002ECAEF</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>EGLView.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>FD26A2670F4144D5002ECAEF</string>
-						<key>history</key>
-						<array>
-							<string>FD26A2430F4143CB002ECAEF</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {895, 575}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>38 136 895 616 0 0 1280 778 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>1280</integer>
@@ -386,7 +305,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
+									<integer>7</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -429,7 +348,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>FD82354E0F3EB06700AB6DC3</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GLTouchesViewController.m</string>
+								<string>EGLView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -437,21 +356,21 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>FD82354F0F3EB06700AB6DC3</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GLTouchesViewController.m</string>
+										<string>EGLView.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>FD26A2650F4144D5002ECAEF</string>
+										<string>FD26A29B0F42215D002ECAEF</string>
 										<key>history</key>
 										<array>
 											<string>FDED0B110F3EB4A300021072</string>
 											<string>FD26A1D30F40D753002ECAEF</string>
 											<string>FD26A1DB0F40DA81002ECAEF</string>
 											<string>FD26A1DD0F40DA81002ECAEF</string>
-											<string>FD26A2490F414415002ECAEF</string>
-											<string>FD26A24A0F414415002ECAEF</string>
-											<string>FD26A2610F4144D5002ECAEF</string>
-											<string>FD26A2620F4144D5002ECAEF</string>
+											<string>FD26A2880F42215D002ECAEF</string>
+											<string>FD26A2890F42215D002ECAEF</string>
+											<string>FD26A28A0F42215D002ECAEF</string>
+											<string>FD26A28B0F42215D002ECAEF</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -506,6 +425,21 @@
 											<string>FD26A2540F414415002ECAEF</string>
 											<string>FD26A2630F4144D5002ECAEF</string>
 											<string>FD26A2640F4144D5002ECAEF</string>
+											<string>FD26A28C0F42215D002ECAEF</string>
+											<string>FD26A28D0F42215D002ECAEF</string>
+											<string>FD26A28E0F42215D002ECAEF</string>
+											<string>FD26A28F0F42215D002ECAEF</string>
+											<string>FD26A2900F42215D002ECAEF</string>
+											<string>FD26A2910F42215D002ECAEF</string>
+											<string>FD26A2920F42215D002ECAEF</string>
+											<string>FD26A2930F42215D002ECAEF</string>
+											<string>FD26A2940F42215D002ECAEF</string>
+											<string>FD26A2950F42215D002ECAEF</string>
+											<string>FD26A2960F42215D002ECAEF</string>
+											<string>FD26A2970F42215D002ECAEF</string>
+											<string>FD26A2980F42215D002ECAEF</string>
+											<string>FD26A2990F42215D002ECAEF</string>
+											<string>FD26A29A0F42215D002ECAEF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -519,18 +453,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {986, 673}}</string>
+								<string>{{0, 0}, {986, 471}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1280 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>673pt</string>
+							<string>471pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>0pt</string>
+							<string>202pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -619,7 +553,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {986, -27}}</string>
+										<string>{{10, 27}, {986, 175}}</string>
 										<key>RubberWindowFrame</key>
 										<string>0 59 1280 719 0 0 1280 778 </string>
 									</dict>
@@ -822,7 +756,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>255935701.764108</real>
+	<real>255992157.11808601</real>
 	<key>ToolbarDisplayMode</key>
 	<integer>1</integer>
 	<key>ToolbarIsVisible</key>
@@ -837,11 +771,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>FD26A2680F4144D5002ECAEF</string>
 		<string>FD26A23D0F41433A002ECAEF</string>
 		<string>FD26A2390F41431D002ECAEF</string>
-		<string>FD26A2590F414415002ECAEF</string>
-		<string>FD26A2560F414415002ECAEF</string>
 		<string>/Users/aarondandy/Desktop/dev/Mediocresoft iPhone/GLTouches/GLTouches.xcodeproj</string>
 	</array>
 	<key>WindowString</key>

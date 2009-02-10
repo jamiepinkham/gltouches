@@ -25,6 +25,7 @@
     CGPoint beginPoint;
     CGPoint endPoint;   
     CGFloat initialDistance;
+	CGFloat initialZoomFactor;
 
 }
 
