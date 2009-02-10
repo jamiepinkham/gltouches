@@ -17,6 +17,7 @@
 {
     IBOutlet UIButton *button;
     IBOutlet UIImagePickerController *imagePickerController;
+    IBOutlet EGLView *eglView;
 
     
 @private

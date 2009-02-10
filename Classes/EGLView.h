@@ -15,8 +15,6 @@
 @interface EGLView : UIView {
     
     CGPoint currentSpinVector;
-	CGFloat zoomFactor;
-    
 @private
 	
 	EAGLContext* context;
@@ -29,11 +27,11 @@
 	NSTimer* viewUpdateTimer;
 	NSTimeInterval viewUpdateTimerInterval;
     CGPoint currentSpinRotation;
+    CGFloat zoomFactor;
 	
 }
 
 @property(nonatomic) CGPoint currentSpinVector;
-@property(nonatomic) CGFloat zoomFactor;
 
 -(void)updateView;
 -(void)setCubeTexture:(UIImage *)image;
