@@ -14,6 +14,7 @@
 @implementation EGLView
 
 @synthesize currentSpinVector;
+@synthesize zoomFactor;
 
 + (Class) layerClass
 {
@@ -218,9 +219,9 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
         CGContextRelease(textureContext);
         
         // Use OpenGL ES to generate a name for the texture.
-		glGenTextures(1, &imageTexture);
+		glGenTextures(1, &textureID);
 		// Bind the texture name. 
-		glBindTexture(GL_TEXTURE_2D, imageTexture);
+		glBindTexture(GL_TEXTURE_2D, textureID);
 		// Speidfy a 2D texture image, provideing the a pointer to the image data in memory
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, textureData);
 		// Release the image data
