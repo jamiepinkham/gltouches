@@ -213,7 +213,12 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
 }
 
 -(void)addZoomFactor:(CGFloat)df{
-	zoomFactor+=df;
+    if(zoomFactor + df < 0)
+        zoomFactor = 0.1f;
+    else if(zoomFactor + df > 1.0f)
+        zoomFactor = 1.0f;
+    else
+        zoomFactor+=df;
     NSLog(@"%f = df",df);
 }
 
