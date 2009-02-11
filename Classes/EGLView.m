@@ -32,11 +32,19 @@
 	
 	glGenFramebuffersOES(1, &viewFramebuffer);
 	glGenRenderbuffersOES(1, &viewRenderbuffer);
-	
 	glBindFramebufferOES(GL_FRAMEBUFFER_OES, viewFramebuffer);
 	glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewRenderbuffer);
 	[context renderbufferStorage:GL_RENDERBUFFER_OES fromDrawable:(id<EAGLDrawable>)self.layer];
 	glFramebufferRenderbufferOES(GL_FRAMEBUFFER_OES, GL_COLOR_ATTACHMENT0_OES, GL_RENDERBUFFER_OES, viewRenderbuffer);
+	
+	GLint backingWidth,backingHeight;
+	glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES, GL_RENDERBUFFER_WIDTH_OES, &backingWidth);
+	glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES, GL_RENDERBUFFER_HEIGHT_OES, &backingHeight);
+	
+	glGenRenderbuffersOES(1, &depthRenderbuffer);
+	glBindRenderbufferOES(GL_RENDERBUFFER_OES, depthRenderbuffer);
+	glRenderbufferStorageOES(GL_RENDERBUFFER_OES,GL_DEPTH_COMPONENT16_OES,backingWidth,backingHeight);
+	glFramebufferRenderbufferOES(GL_FRAMEBUFFER_OES, GL_DEPTH_ATTACHMENT_OES, GL_RENDERBUFFER_OES, depthRenderbuffer);
 	
 	if(glCheckFramebufferStatusOES(GL_FRAMEBUFFER_OES) != GL_FRAMEBUFFER_COMPLETE_OES) {
 		NSLog(@"failed to make complete framebuffer object %x", glCheckFramebufferStatusOES(GL_FRAMEBUFFER_OES));
@@ -212,14 +220,17 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
 	glLoadIdentity();
 	
 	float m = sqrt((currentSpinRotation.x*currentSpinRotation.x)+(currentSpinRotation.y*currentSpinRotation.y));
+	glTranslatef(0,0,1.0f);
 	glRotatef(m,0,currentSpinRotation.x/m,currentSpinRotation.y/m);
 	glScalef(zoomFactor,zoomFactor,zoomFactor);
     
 	glEnableClientState(GL_VERTEX_ARRAY);
 	glEnableClientState(GL_TEXTURE_COORD_ARRAY);
 	glEnable(GL_TEXTURE_2D);
-	glBindTexture(GL_TEXTURE_2D,textureID);
+	glEnable(GL_DEPTH_TEST);
+	glDepthFunc(GL_LEQUAL);
 	
+	glBindTexture(GL_TEXTURE_2D,textureID);	
 	glTexCoordPointer(2, GL_FLOAT, 5*sizeof(GL_FLOAT), vertices);
 	glVertexPointer(3, GL_FLOAT, 5*sizeof(GL_FLOAT), vertices + 2);
 	
@@ -240,9 +251,9 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
         size++;
         n >>= 1;
     }
-    return( size ? (size-1) : 0 );
+    return 2 << ( size ? (size-1) : 0 );
 	
-	// this looks like it would work but this is what I use for 4 bytes
+	// that looks like it would work but this is what I use for 4 bytes
 	/*
 	n |= (n >> 1);
 	n |= (n >> 2);

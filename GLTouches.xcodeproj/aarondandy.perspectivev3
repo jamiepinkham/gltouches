@@ -241,7 +241,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>FD26A3620F4270A1002ECAEF</string>
+						<string>FD26A3B20F428517002ECAEF</string>
 						<key>history</key>
 						<array>
 							<string>FD26A2FE0F42670A002ECAEF</string>
@@ -281,7 +281,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>FD26A3630F4270A1002ECAEF</string>
+						<string>FD26A3B30F428517002ECAEF</string>
 						<key>history</key>
 						<array>
 							<string>FD26A3040F42670A002ECAEF</string>
@@ -411,7 +411,7 @@
 							<real>250</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>0 58 1280 719 0 0 1280 778 </string>
+						<string>-1 58 1280 719 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -441,7 +441,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>FD26A3610F4270A1002ECAEF</string>
+										<string>FD26A3B10F428517002ECAEF</string>
 										<key>history</key>
 										<array>
 											<string>FD26A1D30F40D753002ECAEF</string>
@@ -452,7 +452,7 @@
 											<string>FD26A2A50F4223E9002ECAEF</string>
 											<string>FD26A2BC0F422646002ECAEF</string>
 											<string>FD26A3540F426FC2002ECAEF</string>
-											<string>FD26A35E0F42709C002ECAEF</string>
+											<string>FD26A39B0F4284CA002ECAEF</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -551,7 +551,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {986, 673}}</string>
 								<key>RubberWindowFrame</key>
-								<string>0 58 1280 719 0 0 1280 778 </string>
+								<string>-1 58 1280 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -576,7 +576,7 @@
 										<key>Frame</key>
 										<string>{{10, 27}, {986, -27}}</string>
 										<key>RubberWindowFrame</key>
-										<string>0 58 1280 719 0 0 1280 778 </string>
+										<string>-1 58 1280 719 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -852,7 +852,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>256012449.43273401</real>
+	<real>256017687.419655</real>
 	<key>ToolbarDisplayMode</key>
 	<integer>1</integer>
 	<key>ToolbarIsVisible</key>
@@ -875,7 +875,7 @@
 		<string>/Users/aarondandy/Desktop/dev/Mediocresoft iPhone/GLTouches/GLTouches.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>0 58 1280 719 0 0 1280 778 </string>
+	<string>-1 58 1280 719 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
