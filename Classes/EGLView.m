@@ -233,14 +233,29 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
 	[context presentRenderbuffer:GL_RENDERBUFFER_OES];
 	
 }
--(int)nearestPowerOfTwo:(int)num{
+-(int)nearestPowerOfTwo:(unsigned int)n{
     int size = 0;
     
-    while (num){
+    while (n){
         size++;
-        num >>= 1;
+        n >>= 1;
     }
     return( size ? (size-1) : 0 );
+	
+	// this looks like it would work but this is what I use for 4 bytes
+	/*
+	n |= (n >> 1);
+	n |= (n >> 2);
+	n |= (n >> 4);
+	n |= (n >> 8);
+	n |= (n >> 16);
+	return (n+1);
+	*/
+	
+}
+
+-(bool)isPowerOfTwo:(size_t)n{
+	return (0 == (n & (n-1)));
 }
 
 -(void)setCubeTexture:(UIImage *)image{
@@ -250,12 +265,10 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
     size_t height = CGImageGetHeight(textureImage);
     if(textureImage){
         
-		// TODO: have the texture size be powers of two and down(its a mobile device) sample the image to fit
-        int width2 = [self nearestPowerOfTwo:(int)width];
-        int height2 = [self nearestPowerOfTwo:(int)height];
-		size_t newTextureWidth = pow(2,width2);
-		size_t newTextureHeight = pow(2,height2);        
-        UIImage* temp = [self scaleAndRotateImage:image withWidth:newTextureWidth widthHeight:newTextureHeight];
+		size_t newTextureWidth = [self nearestPowerOfTwo:(int)width];
+		size_t newTextureHeight = [self nearestPowerOfTwo:(int)height];
+        
+		UIImage* temp = [self scaleAndRotateImage:image withWidth:(CGFloat)newTextureWidth widthHeight:(CGFloat)newTextureHeight];
         CGImageRef newTextureImage = temp.CGImage;
 		GLubyte* textureData = (GLubyte *) malloc(newTextureWidth * newTextureHeight * 4);
         CGContextRef textureContext = CGBitmapContextCreate(textureData, newTextureWidth, newTextureHeight, 8, newTextureWidth * 4, CGImageGetColorSpace(newTextureImage), kCGImageAlphaPremultipliedLast);

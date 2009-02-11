@@ -222,7 +222,88 @@
 		</dict>
 	</array>
 	<key>OpenEditors</key>
-	<array/>
+	<array>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>FD26A2FC0F42670A002ECAEF</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>CGGeometry.h</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>FD26A2FD0F42670A002ECAEF</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>CGGeometry.h</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>FD26A3130F426757002ECAEF</string>
+						<key>history</key>
+						<array>
+							<string>FD26A2FE0F42670A002ECAEF</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {895, 575}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>15 157 895 616 0 0 1280 778 </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>FD26A3020F42670A002ECAEF</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>CGContext.h</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>FD26A3030F42670A002ECAEF</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>CGContext.h</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>FD26A3140F426757002ECAEF</string>
+						<key>history</key>
+						<array>
+							<string>FD26A3040F42670A002ECAEF</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {895, 575}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>130 52 895 616 0 0 1280 778 </string>
+			</dict>
+		</dict>
+	</array>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>1280</integer>
@@ -305,6 +386,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>7</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -359,18 +441,18 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>FD26A2E60F422F17002ECAEF</string>
+										<string>FD26A3120F426757002ECAEF</string>
 										<key>history</key>
 										<array>
 											<string>FD26A1D30F40D753002ECAEF</string>
 											<string>FD26A1DB0F40DA81002ECAEF</string>
 											<string>FD26A2880F42215D002ECAEF</string>
-											<string>FD26A28A0F42215D002ECAEF</string>
 											<string>FD26A2A30F4223E9002ECAEF</string>
 											<string>FD26A2A40F4223E9002ECAEF</string>
 											<string>FD26A2A50F4223E9002ECAEF</string>
 											<string>FD26A2BC0F422646002ECAEF</string>
-											<string>FD26A2E30F422E4D002ECAEF</string>
+											<string>FD26A2F70F42670A002ECAEF</string>
+											<string>FD26A3100F42673D002ECAEF</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -446,6 +528,8 @@
 											<string>FD26A2AA0F4223E9002ECAEF</string>
 											<string>FD26A2AB0F4223E9002ECAEF</string>
 											<string>FD26A2BE0F422646002ECAEF</string>
+											<string>FD26A2F90F42670A002ECAEF</string>
+											<string>FD26A2FA0F42670A002ECAEF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -762,7 +846,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>255995671.59877899</real>
+	<real>256010071.42928001</real>
 	<key>ToolbarDisplayMode</key>
 	<integer>1</integer>
 	<key>ToolbarIsVisible</key>
@@ -777,9 +861,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>FD26A3150F426757002ECAEF</string>
 		<string>FD26A2C10F422646002ECAEF</string>
 		<string>FD26A23D0F41433A002ECAEF</string>
 		<string>FD26A2390F41431D002ECAEF</string>
+		<string>FD26A3020F42670A002ECAEF</string>
+		<string>FD26A2FC0F42670A002ECAEF</string>
 		<string>/Users/aarondandy/Desktop/dev/Mediocresoft iPhone/GLTouches/GLTouches.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
