@@ -37,6 +37,7 @@
 -(void)updateView;
 -(void)setCubeTexture:(UIImage *)image;
 -(void)renderEAGL;
+-(int)nearestPowerOfTwo:(int)num;
 
 @end
 
