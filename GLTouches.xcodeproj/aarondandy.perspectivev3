@@ -241,7 +241,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>FD26A3130F426757002ECAEF</string>
+						<string>FD26A3620F4270A1002ECAEF</string>
 						<key>history</key>
 						<array>
 							<string>FD26A2FE0F42670A002ECAEF</string>
@@ -281,7 +281,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>FD26A3140F426757002ECAEF</string>
+						<string>FD26A3630F4270A1002ECAEF</string>
 						<key>history</key>
 						<array>
 							<string>FD26A3040F42670A002ECAEF</string>
@@ -386,7 +386,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
+									<integer>6</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -411,7 +411,7 @@
 							<real>250</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>0 57 1280 719 0 0 1280 778 </string>
+						<string>0 58 1280 719 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -441,7 +441,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>FD26A3120F426757002ECAEF</string>
+										<string>FD26A3610F4270A1002ECAEF</string>
 										<key>history</key>
 										<array>
 											<string>FD26A1D30F40D753002ECAEF</string>
@@ -451,8 +451,8 @@
 											<string>FD26A2A40F4223E9002ECAEF</string>
 											<string>FD26A2A50F4223E9002ECAEF</string>
 											<string>FD26A2BC0F422646002ECAEF</string>
-											<string>FD26A2F70F42670A002ECAEF</string>
-											<string>FD26A3100F42673D002ECAEF</string>
+											<string>FD26A3540F426FC2002ECAEF</string>
+											<string>FD26A35E0F42709C002ECAEF</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -530,6 +530,12 @@
 											<string>FD26A2BE0F422646002ECAEF</string>
 											<string>FD26A2F90F42670A002ECAEF</string>
 											<string>FD26A2FA0F42670A002ECAEF</string>
+											<string>FD26A33F0F426F3F002ECAEF</string>
+											<string>FD26A3400F426F3F002ECAEF</string>
+											<string>FD26A3410F426F3F002ECAEF</string>
+											<string>FD26A3480F426F4D002ECAEF</string>
+											<string>FD26A34F0F426FB3002ECAEF</string>
+											<string>FD26A3560F426FC2002ECAEF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -543,18 +549,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {986, 471}}</string>
+								<string>{{0, 0}, {986, 673}}</string>
 								<key>RubberWindowFrame</key>
-								<string>0 57 1280 719 0 0 1280 778 </string>
+								<string>0 58 1280 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>471pt</string>
+							<string>673pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>202pt</string>
+							<string>0pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -568,9 +574,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {986, 175}}</string>
+										<string>{{10, 27}, {986, -27}}</string>
 										<key>RubberWindowFrame</key>
-										<string>0 57 1280 719 0 0 1280 778 </string>
+										<string>0 58 1280 719 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -846,7 +852,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>256010071.42928001</real>
+	<real>256012449.43273401</real>
 	<key>ToolbarDisplayMode</key>
 	<integer>1</integer>
 	<key>ToolbarIsVisible</key>
@@ -861,7 +867,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>FD26A3150F426757002ECAEF</string>
 		<string>FD26A2C10F422646002ECAEF</string>
 		<string>FD26A23D0F41433A002ECAEF</string>
 		<string>FD26A2390F41431D002ECAEF</string>
@@ -870,7 +875,7 @@
 		<string>/Users/aarondandy/Desktop/dev/Mediocresoft iPhone/GLTouches/GLTouches.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>0 57 1280 719 0 0 1280 778 </string>
+	<string>0 58 1280 719 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

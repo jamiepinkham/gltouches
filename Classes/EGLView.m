@@ -268,7 +268,7 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
 		size_t newTextureWidth = [self nearestPowerOfTwo:(int)width];
 		size_t newTextureHeight = [self nearestPowerOfTwo:(int)height];
         
-		UIImage* temp = [self scaleAndRotateImage:image withWidth:(CGFloat)newTextureWidth widthHeight:(CGFloat)newTextureHeight];
+		UIImage* temp = [self scaleAndRotateImage:image withWidth:(CGFloat)newTextureWidth withHeight:(CGFloat)newTextureHeight];
         CGImageRef newTextureImage = temp.CGImage;
 		GLubyte* textureData = (GLubyte *) malloc(newTextureWidth * newTextureHeight * 4);
         CGContextRef textureContext = CGBitmapContextCreate(textureData, newTextureWidth, newTextureHeight, 8, newTextureWidth * 4, CGImageGetColorSpace(newTextureImage), kCGImageAlphaPremultipliedLast);
@@ -284,7 +284,7 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
 		// Bind the texture name. 
 		glBindTexture(GL_TEXTURE_2D, textureID);
 		// Speidfy a 2D texture image, provideing the a pointer to the image data in memory
-		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, textureData);
+		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, newTextureWidth, newTextureHeight, 0, GL_RGBA, GL_UNSIGNED_BYTE, textureData);
 		// Release the image data
 		free(textureData);
 		
@@ -298,16 +298,6 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
 		//glEnable(GL_BLEND);
         
     }
-}
-
--(void)addZoomFactor:(CGFloat)df{
-    if(zoomFactor + df < 0)
-        zoomFactor = 0.1f;
-    else if(zoomFactor + df > 1.0f)
-        zoomFactor = 1.0f;
-    else
-        zoomFactor+=df;
-    NSLog(@"%f = df",df);
 }
 
 - (UIImage *)scaleAndRotateImage:(UIImage *)image withWidth:(CGFloat)newWidth withHeight:(CGFloat)newHeight{

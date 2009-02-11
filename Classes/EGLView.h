@@ -37,8 +37,6 @@
 -(void)updateView;
 -(void)setCubeTexture:(UIImage *)image;
 -(void)renderEAGL;
--(void)addZoomFactor:(CGFloat)df;
-
 
 @end
 
