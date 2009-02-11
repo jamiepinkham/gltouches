@@ -13,14 +13,10 @@
 @interface GLTouchesAppDelegate : NSObject <UIApplicationDelegate, UIImagePickerControllerDelegate> {
     UIWindow *window;
     GLTouchesViewController *viewController;
-    IBOutlet UIButton *button;
-    IBOutlet UIImagePickerController *imagePickerController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet GLTouchesViewController *viewController;
-
--(IBAction)showImagePicker;
 
 @end
 

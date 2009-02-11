@@ -74,7 +74,6 @@
             
             //Check if zoom in or zoom out.
 			
-			// dude what the fuck? I can't call a god damned method.
 			CGFloat dist = initialDistance - finalDistance;
             NSLog(@"%f = dist initial > final", dist);
             [eglView setZoomFactor: initialZoomFactor+(dist / 300) ];
@@ -151,13 +150,6 @@
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo
 {
 	[eglView setCubeTexture:image];
-    //NSData *imageData = UIImagePNGRepresentation(image);
-    
-    //NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    //NSString *documentsDirectory = [paths objectAtIndex:0];
-        
-    //NSString *filename = [documentsDirectory stringByAppendingPathComponent:@"SavedImage"];
-    //[imageData writeToFile:filename atomically:NO];
     [picker dismissModalViewControllerAnimated:YES];
 }
 /*
