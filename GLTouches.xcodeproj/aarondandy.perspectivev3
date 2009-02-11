@@ -241,7 +241,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>FD26A3B20F428517002ECAEF</string>
+						<string>FD26A4100F429DD1002ECAEF</string>
 						<key>history</key>
 						<array>
 							<string>FD26A2FE0F42670A002ECAEF</string>
@@ -281,7 +281,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>FD26A3B30F428517002ECAEF</string>
+						<string>FD26A4110F429DD1002ECAEF</string>
 						<key>history</key>
 						<array>
 							<string>FD26A3040F42670A002ECAEF</string>
@@ -441,7 +441,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>FD26A3B10F428517002ECAEF</string>
+										<string>FD26A40F0F429DD1002ECAEF</string>
 										<key>history</key>
 										<array>
 											<string>FD26A1D30F40D753002ECAEF</string>
@@ -549,18 +549,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {986, 673}}</string>
+								<string>{{0, 0}, {986, 471}}</string>
 								<key>RubberWindowFrame</key>
 								<string>-1 58 1280 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>673pt</string>
+							<string>471pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>0pt</string>
+							<string>202pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -575,8 +575,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {986, -27}}</string>
-										<key>RubberWindowFrame</key>
-										<string>-1 58 1280 719 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -652,6 +650,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {986, 175}}</string>
+										<key>RubberWindowFrame</key>
+										<string>-1 58 1280 719 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -852,7 +852,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>256017687.419655</real>
+	<real>256024017.86184999</real>
 	<key>ToolbarDisplayMode</key>
 	<integer>1</integer>
 	<key>ToolbarIsVisible</key>

@@ -72,33 +72,30 @@
 	depthRenderbuffer = 0;
 }
 
-void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,  
-				  GLfloat zFar) 
-{ 
-	GLfloat xmin, xmax, ymin, ymax;
-	ymax = zNear * ((GLfloat)tan(fovy * 3.1415962f / 360.0f));   
-	ymin = -ymax; 
-	xmin = ymin * aspect; 
-	xmax = ymax * aspect;   
-}
-
 - (void)setupView
 {
 	
 	GLint backingWidth,backingHeight;
 	glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES, GL_RENDERBUFFER_WIDTH_OES, &backingWidth);
-	glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES, GL_RENDERBUFFER_HEIGHT_OES, &backingHeight);
-	glViewport(0, 0, backingWidth, backingHeight);
-	
-	float ratio = (float)(backingWidth)/(backingHeight); 
+	glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES, GL_RENDERBUFFER_HEIGHT_OES, &backingHeight);	
 	
 	glMatrixMode(GL_PROJECTION); 
 	glLoadIdentity();
 	
-	Perspective(45.0f,ratio, 1.0f, 40.0f);
+	GLfloat fov = 0.785398163397f;
+	GLfloat zNear = 0.05f;
+	GLfloat zFar = 1000.0f;
 	
-	glLoadIdentity();
+	GLfloat aspect = (GLfloat)backingWidth / (GLfloat)backingHeight;
+	GLfloat ymax = zNear * tan(fov * 0.5f);
+	GLfloat ymin = -ymax;
+	GLfloat xmin = ymin * aspect;
+	GLfloat xmax = ymax * aspect;
+	glFrustumf(xmin,xmax,ymin,ymax,zNear,zFar);
+	
 	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+	glViewport(0, 0, backingWidth, backingHeight);
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 }
 
@@ -220,9 +217,10 @@ void Perspective (GLfloat fovy, GLfloat aspect, GLfloat zNear,
 	glLoadIdentity();
 	
 	float m = sqrt((currentSpinRotation.x*currentSpinRotation.x)+(currentSpinRotation.y*currentSpinRotation.y));
-	glTranslatef(0,0,1.0f);
-	glRotatef(m,0,currentSpinRotation.x/m,currentSpinRotation.y/m);
+	glTranslatef(0,0,-10.0f);
 	glScalef(zoomFactor,zoomFactor,zoomFactor);
+	glRotatef(m,0,currentSpinRotation.x/m,currentSpinRotation.y/m);
+	
     
 	glEnableClientState(GL_VERTEX_ARRAY);
 	glEnableClientState(GL_TEXTURE_COORD_ARRAY);
