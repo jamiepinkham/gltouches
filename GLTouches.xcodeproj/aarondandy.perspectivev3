@@ -227,46 +227,6 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>FDF83BD90F44C03900E2F167</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>EGLView.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>FDF83BDA0F44C03900E2F167</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>EGLView.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>FDF83BDB0F44C03900E2F167</string>
-						<key>history</key>
-						<array>
-							<string>FDF83BD60F44BF4900E2F167</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {895, 575}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>235 129 895 616 0 0 1280 778 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
 				<string>FD26A3020F42670A002ECAEF</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>CGContext.h</string>
@@ -281,7 +241,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>FDF83BDC0F44C03900E2F167</string>
+						<string>FDF83BFE0F44C41100E2F167</string>
 						<key>history</key>
 						<array>
 							<string>FD0156920F4480CA00B7E552</string>
@@ -385,7 +345,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
+									<integer>7</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -421,12 +381,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>FD82354E0F3EB06700AB6DC3</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GLTouchesViewController.m</string>
+								<string>EGLView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -434,11 +396,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>FD82354F0F3EB06700AB6DC3</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GLTouchesViewController.m</string>
+										<string>EGLView.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>FDF83BD80F44C03900E2F167</string>
+										<string>FDF83BFD0F44C41100E2F167</string>
 										<key>history</key>
 										<array>
 											<string>FD26A1D30F40D753002ECAEF</string>
@@ -447,9 +409,9 @@
 											<string>FD01564B0F43D7FB00B7E552</string>
 											<string>FD01564C0F43D7FB00B7E552</string>
 											<string>FD01564D0F43D7FB00B7E552</string>
-											<string>FDF83B9D0F44BC1100E2F167</string>
-											<string>FDF83BB50F44BCB000E2F167</string>
-											<string>FDF83BD00F44BEAB00E2F167</string>
+											<string>FDF83BEA0F44C11800E2F167</string>
+											<string>FDF83BEB0F44C11800E2F167</string>
+											<string>FDF83BEC0F44C11800E2F167</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -469,6 +431,10 @@
 											<string>FDF83BA40F44BC1100E2F167</string>
 											<string>FDF83BAC0F44BC3600E2F167</string>
 											<string>FDF83BB70F44BCB000E2F167</string>
+											<string>FDF83BED0F44C11800E2F167</string>
+											<string>FDF83BEE0F44C11800E2F167</string>
+											<string>FDF83BEF0F44C11800E2F167</string>
+											<string>FDF83BF00F44C11800E2F167</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -568,8 +534,6 @@
 									<string>PBXCVSModule</string>
 								</dict>
 								<dict>
-									<key>BecomeActive</key>
-									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
@@ -787,7 +751,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>256163897.44840899</real>
+	<real>256164881.26550099</real>
 	<key>ToolbarDisplayMode</key>
 	<integer>1</integer>
 	<key>ToolbarIsVisible</key>
@@ -804,7 +768,6 @@
 	<array>
 		<string>FD26A3020F42670A002ECAEF</string>
 		<string>/Users/aarondandy/Desktop/dev/Mediocresoft iPhone/GLTouches/GLTouches.xcodeproj</string>
-		<string>FDF83BD90F44C03900E2F167</string>
 	</array>
 	<key>WindowString</key>
 	<string>8 59 1280 719 0 0 1280 778 </string>
