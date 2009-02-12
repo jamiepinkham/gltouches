@@ -241,10 +241,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>FD26A4100F429DD1002ECAEF</string>
+						<string>FD0156820F43DD0A00B7E552</string>
 						<key>history</key>
 						<array>
-							<string>FD26A2FE0F42670A002ECAEF</string>
+							<string>FD26A4150F429E3C002ECAEF</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -281,10 +281,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>FD26A4110F429DD1002ECAEF</string>
+						<string>FD0156830F43DD0A00B7E552</string>
 						<key>history</key>
 						<array>
-							<string>FD26A3040F42670A002ECAEF</string>
+							<string>FD26A4170F429E3C002ECAEF</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -380,13 +380,12 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>1C37FBAC04509CD000000102</string>
-								<string>FD26A1D20F40D753002ECAEF</string>
 								<string>1C77FABC04509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>6</integer>
+									<integer>7</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -441,18 +440,18 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>FD26A40F0F429DD1002ECAEF</string>
+										<string>FD0156810F43DD0A00B7E552</string>
 										<key>history</key>
 										<array>
 											<string>FD26A1D30F40D753002ECAEF</string>
-											<string>FD26A1DB0F40DA81002ECAEF</string>
-											<string>FD26A2880F42215D002ECAEF</string>
-											<string>FD26A2A30F4223E9002ECAEF</string>
 											<string>FD26A2A40F4223E9002ECAEF</string>
 											<string>FD26A2A50F4223E9002ECAEF</string>
-											<string>FD26A2BC0F422646002ECAEF</string>
-											<string>FD26A3540F426FC2002ECAEF</string>
-											<string>FD26A39B0F4284CA002ECAEF</string>
+											<string>FD01564B0F43D7FB00B7E552</string>
+											<string>FD01564C0F43D7FB00B7E552</string>
+											<string>FD01564D0F43D7FB00B7E552</string>
+											<string>FD01564F0F43D7FB00B7E552</string>
+											<string>FD01566F0F43DBFE00B7E552</string>
+											<string>FD0156700F43DBFE00B7E552</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -462,80 +461,19 @@
 											<string>FDED0B1B0F3EB4A300021072</string>
 											<string>FDED0B1C0F3EB4A300021072</string>
 											<string>FDED0B1D0F3EB4A300021072</string>
-											<string>FD26A1C70F40D71C002ECAEF</string>
 											<string>FD26A1C80F40D71C002ECAEF</string>
-											<string>FD26A1CA0F40D71C002ECAEF</string>
-											<string>FD26A1D50F40D753002ECAEF</string>
-											<string>FD26A1DE0F40DA81002ECAEF</string>
-											<string>FD26A1DF0F40DA81002ECAEF</string>
 											<string>FD26A1E00F40DA81002ECAEF</string>
-											<string>FD26A1FA0F413E81002ECAEF</string>
-											<string>FD26A1FF0F41401E002ECAEF</string>
-											<string>FD26A2090F414199002ECAEF</string>
-											<string>FD26A20A0F414199002ECAEF</string>
-											<string>FD26A20B0F414199002ECAEF</string>
-											<string>FD26A20C0F414199002ECAEF</string>
-											<string>FD26A20D0F414199002ECAEF</string>
-											<string>FD26A20E0F414199002ECAEF</string>
-											<string>FD26A20F0F414199002ECAEF</string>
-											<string>FD26A2100F414199002ECAEF</string>
-											<string>FD26A2110F414199002ECAEF</string>
-											<string>FD26A2120F414199002ECAEF</string>
-											<string>FD26A2130F414199002ECAEF</string>
-											<string>FD26A2140F414199002ECAEF</string>
-											<string>FD26A2150F414199002ECAEF</string>
-											<string>FD26A2250F41431D002ECAEF</string>
-											<string>FD26A2260F41431D002ECAEF</string>
-											<string>FD26A2270F41431D002ECAEF</string>
-											<string>FD26A2280F41431D002ECAEF</string>
-											<string>FD26A2290F41431D002ECAEF</string>
-											<string>FD26A22A0F41431D002ECAEF</string>
-											<string>FD26A22B0F41431D002ECAEF</string>
-											<string>FD26A22C0F41431D002ECAEF</string>
-											<string>FD26A22D0F41431D002ECAEF</string>
-											<string>FD26A22E0F41431D002ECAEF</string>
-											<string>FD26A22F0F41431D002ECAEF</string>
-											<string>FD26A2300F41431D002ECAEF</string>
-											<string>FD26A24C0F414415002ECAEF</string>
-											<string>FD26A24D0F414415002ECAEF</string>
-											<string>FD26A24E0F414415002ECAEF</string>
-											<string>FD26A24F0F414415002ECAEF</string>
-											<string>FD26A2500F414415002ECAEF</string>
-											<string>FD26A2510F414415002ECAEF</string>
-											<string>FD26A2520F414415002ECAEF</string>
-											<string>FD26A2530F414415002ECAEF</string>
-											<string>FD26A2540F414415002ECAEF</string>
-											<string>FD26A2630F4144D5002ECAEF</string>
-											<string>FD26A2640F4144D5002ECAEF</string>
-											<string>FD26A28C0F42215D002ECAEF</string>
-											<string>FD26A28D0F42215D002ECAEF</string>
-											<string>FD26A28E0F42215D002ECAEF</string>
-											<string>FD26A28F0F42215D002ECAEF</string>
-											<string>FD26A2900F42215D002ECAEF</string>
-											<string>FD26A2910F42215D002ECAEF</string>
-											<string>FD26A2920F42215D002ECAEF</string>
-											<string>FD26A2930F42215D002ECAEF</string>
-											<string>FD26A2940F42215D002ECAEF</string>
-											<string>FD26A2950F42215D002ECAEF</string>
-											<string>FD26A2960F42215D002ECAEF</string>
-											<string>FD26A2970F42215D002ECAEF</string>
-											<string>FD26A2980F42215D002ECAEF</string>
-											<string>FD26A2990F42215D002ECAEF</string>
-											<string>FD26A29A0F42215D002ECAEF</string>
-											<string>FD26A2A70F4223E9002ECAEF</string>
-											<string>FD26A2A80F4223E9002ECAEF</string>
-											<string>FD26A2A90F4223E9002ECAEF</string>
 											<string>FD26A2AA0F4223E9002ECAEF</string>
-											<string>FD26A2AB0F4223E9002ECAEF</string>
-											<string>FD26A2BE0F422646002ECAEF</string>
-											<string>FD26A2F90F42670A002ECAEF</string>
-											<string>FD26A2FA0F42670A002ECAEF</string>
-											<string>FD26A33F0F426F3F002ECAEF</string>
-											<string>FD26A3400F426F3F002ECAEF</string>
-											<string>FD26A3410F426F3F002ECAEF</string>
-											<string>FD26A3480F426F4D002ECAEF</string>
-											<string>FD26A34F0F426FB3002ECAEF</string>
-											<string>FD26A3560F426FC2002ECAEF</string>
+											<string>FD0156510F43D7FB00B7E552</string>
+											<string>FD0156520F43D7FB00B7E552</string>
+											<string>FD0156530F43D7FB00B7E552</string>
+											<string>FD0156540F43D7FB00B7E552</string>
+											<string>FD0156550F43D7FB00B7E552</string>
+											<string>FD0156560F43D7FB00B7E552</string>
+											<string>FD0156690F43DB5D00B7E552</string>
+											<string>FD01566A0F43DB5D00B7E552</string>
+											<string>FD0156710F43DBFE00B7E552</string>
+											<string>FD0156720F43DBFE00B7E552</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -549,18 +487,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {986, 471}}</string>
+								<string>{{0, 0}, {986, 673}}</string>
 								<key>RubberWindowFrame</key>
 								<string>-1 58 1280 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>471pt</string>
+							<string>673pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>202pt</string>
+							<string>0pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -575,6 +513,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {986, -27}}</string>
+										<key>RubberWindowFrame</key>
+										<string>-1 58 1280 719 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -650,8 +590,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {986, 175}}</string>
-										<key>RubberWindowFrame</key>
-										<string>-1 58 1280 719 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -679,11 +617,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>FD26A1B50F40D351002ECAEF</string>
+				<string>FD01563C0F43D1D600B7E552</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>FD26A1B60F40D351002ECAEF</string>
+				<string>FD01563D0F43D1D600B7E552</string>
 				<string>FD82354E0F3EB06700AB6DC3</string>
-				<string>FD26A1B70F40D351002ECAEF</string>
+				<string>FD01563E0F43D1D600B7E552</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -830,14 +768,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>FD26A1B80F40D351002ECAEF</string>
+				<string>FD01563F0F43D1D600B7E552</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>FD26A1B90F40D351002ECAEF</string>
-				<string>FD26A1BA0F40D351002ECAEF</string>
-				<string>FD26A1BB0F40D351002ECAEF</string>
-				<string>FD26A1BC0F40D351002ECAEF</string>
-				<string>FD26A1BD0F40D351002ECAEF</string>
+				<string>FD0156400F43D1D600B7E552</string>
+				<string>FD0156410F43D1D600B7E552</string>
+				<string>FD0156420F43D1D600B7E552</string>
+				<string>FD0156430F43D1D600B7E552</string>
+				<string>FD0156440F43D1D600B7E552</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -852,7 +790,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>256024017.86184999</real>
+	<real>256105738.55975899</real>
 	<key>ToolbarDisplayMode</key>
 	<integer>1</integer>
 	<key>ToolbarIsVisible</key>
@@ -867,9 +805,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>FD26A2C10F422646002ECAEF</string>
-		<string>FD26A23D0F41433A002ECAEF</string>
-		<string>FD26A2390F41431D002ECAEF</string>
 		<string>FD26A3020F42670A002ECAEF</string>
 		<string>FD26A2FC0F42670A002ECAEF</string>
 		<string>/Users/aarondandy/Desktop/dev/Mediocresoft iPhone/GLTouches/GLTouches.xcodeproj</string>
