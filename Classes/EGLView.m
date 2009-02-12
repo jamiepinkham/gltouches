@@ -161,11 +161,10 @@
 }
 
 - (void)updateView{
-    float degradingFactor = [degradingTimer elapsedSeconds] / 5;
-
 	// do some spinning
-	currentSpinRotation.x += currentSpinVector.x / ([degradingTimer elapsedSeconds] / 5);
-	currentSpinRotation.y += currentSpinVector.y / ([degradingTimer elapsedSeconds] / 5);
+	float degradingFactor = [degradingTimer elapsedSeconds] / 5;
+	currentSpinRotation.x += currentSpinVector.x / degradingFactor;
+	currentSpinRotation.y += currentSpinVector.y / degradingFactor;
 	
 	// period the magnitude of currentSpinRotation to 360 so it doesent get too big
 	float m = sqrt((currentSpinRotation.x*currentSpinRotation.x)+(currentSpinRotation.y*currentSpinRotation.y));
