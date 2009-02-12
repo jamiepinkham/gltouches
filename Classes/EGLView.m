@@ -82,16 +82,20 @@
 	glMatrixMode(GL_PROJECTION); 
 	glLoadIdentity();
 	
+	// setup the view frustrum
 	GLfloat fov = 0.785398163397f;
 	GLfloat zNear = 0.05f;
 	GLfloat zFar = 1000.0f;
-	
 	GLfloat aspect = (GLfloat)backingWidth / (GLfloat)backingHeight;
-	GLfloat ymax = zNear * tan(fov * 0.5f);
-	GLfloat ymin = -ymax;
-	GLfloat xmin = ymin * aspect;
-	GLfloat xmax = ymax * aspect;
-	glFrustumf(xmin,xmax,ymin,ymax,zNear,zFar);
+	GLfloat t = zNear * tan(fov * 0.5f);
+	glFrustumf(
+			   -t * aspect,
+			   t * aspect,
+			   -t,
+			   t,
+			   zNear,
+			   zFar
+	);
 	
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
@@ -102,9 +106,14 @@
 - (id)initWithCoder:(NSCoder*)coder
 {
 	if(self = [super initWithCoder:coder]) {
+		// init values
+		currentSpinVector = CGPointMake(1.0f,0.25f);
+		currentSpinRotation = CGPointMake(0.0f,0.0f);
+		zoomFactor = 0.5f;
+		
 		// Get the layer
 		CAEAGLLayer *eaglLayer = (CAEAGLLayer*) self.layer;
-		
+		// set it up
 		eaglLayer.opaque = YES;
 		eaglLayer.drawableProperties =
 		[NSDictionary dictionaryWithObjectsAndKeys:
@@ -115,18 +124,16 @@
 		 nil
          ];
 		
+		// create an opengl context for the view
 		context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES1];
-		
+		// create the buffers
 		if(!context || ![EAGLContext setCurrentContext:context] || ![self createBuffers]) {
 			[self release];
 			return nil;
 		}
-		
-		currentSpinVector = CGPointMake(1.0f,0.25f);
-		currentSpinRotation = CGPointMake(0.0f,0.0f);
-		zoomFactor = 0.5f;
-		
+		// set the opengl states
 		[self setupView];
+		
 		
 		viewUpdateTimerInterval = 1.0 / 60.0; // 60fps
 		viewUpdateTimer = [NSTimer scheduledTimerWithTimeInterval:viewUpdateTimerInterval 
@@ -150,21 +157,18 @@
 
 
 - (void)drawRect:(CGRect)rect {
-    //[self renderEAGL];
 }
 
 - (void)updateView{
 	float secondsElapsed = 1.0f;
 	currentSpinRotation.x += currentSpinVector.x * secondsElapsed;
 	currentSpinRotation.y += currentSpinVector.y * secondsElapsed;
-    
 	[self renderEAGL];
 }
 
 - (void)renderEAGL{
 	
-	// 2 float => texture coordinate
-	// 3 float => vertex position
+	// standard cube vertex data from some forum
 	static const GLfloat vertices[] =
 	{
 		0.0f,0.0f,1.0,-1.0,1.0,         // 2
@@ -197,8 +201,6 @@
 		0.0f,1.0f,1.0,-1.0,1.0,         // 2
 		1.0f,1.0f,1.0,-1.0,-1.0,      // 1
 	};
-	
-	// Cube's faces (list of indexes)
 	static const GLubyte elements[] =
 	{
 		0,1,2,3,
@@ -208,36 +210,37 @@
 		16,17,18,19,
 		20,21,22,23,
 	};
-	
+	// this thread will use the view's current context
 	[EAGLContext setCurrentContext:context];
-	
+	// choose the buffers and clear them
 	glBindFramebufferOES(GL_FRAMEBUFFER_OES, viewFramebuffer);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	
+	// set the modelview matrix
 	glLoadIdentity();
-	
 	float m = sqrt((currentSpinRotation.x*currentSpinRotation.x)+(currentSpinRotation.y*currentSpinRotation.y));
 	glTranslatef(0,0,-10.0f);
 	glScalef(zoomFactor,zoomFactor,zoomFactor);
-	glRotatef(m,0,currentSpinRotation.x/m,currentSpinRotation.y/m);
-	
-    
-	glEnableClientState(GL_VERTEX_ARRAY);
-	glEnableClientState(GL_TEXTURE_COORD_ARRAY);
-	glEnable(GL_TEXTURE_2D);
+	glRotatef(m,currentSpinRotation.y/m,currentSpinRotation.x/m,0);
+	// set the base color to white
+	glColor4f(1.0f,1.0f,1.0f,1.0f);
+	// turn depth testing on (z-buffer)
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LEQUAL);
-	
+	// enable and prepare texture info for cube faces
+	glEnable(GL_TEXTURE_2D);
+	glEnableClientState(GL_TEXTURE_COORD_ARRAY);
 	glBindTexture(GL_TEXTURE_2D,textureID);	
 	glTexCoordPointer(2, GL_FLOAT, 5*sizeof(GL_FLOAT), vertices);
+	// enable and prepare vertex position info for cube faces
+	glEnableClientState(GL_VERTEX_ARRAY);
 	glVertexPointer(3, GL_FLOAT, 5*sizeof(GL_FLOAT), vertices + 2);
-	
-	glColor4f(1.0f,1.0f,1.0f,1.0f);
+	// render each of the 6 faces
 	for(unsigned int i = 0; i < 6; i++){
 		glDrawElements(GL_TRIANGLE_STRIP, 4, GL_UNSIGNED_BYTE, elements + (i*4));
 	}
+	// ensure all rendering commands have completed
 	glFlush();
-	
+	// swap the render buffers (show what we made)
 	glBindRenderbufferOES(GL_RENDERBUFFER_OES, viewRenderbuffer);
 	[context presentRenderbuffer:GL_RENDERBUFFER_OES];
 	
@@ -259,7 +262,7 @@
     size_t width = CGImageGetWidth(textureImage);
     size_t height = CGImageGetHeight(textureImage);
     if(textureImage){
-        
+        // texture width and height need to be powers of two, so we resize the image
 		size_t newTextureWidth = [self nearestPowerOfTwo:(int)width];
 		size_t newTextureHeight = [self nearestPowerOfTwo:(int)height];
         
