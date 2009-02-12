@@ -104,17 +104,13 @@
             NSLog(@"%f = [precisionTimer elapsedSeconds]", [precisionTimer elapsedSeconds]);
             UITouch *touch = [[event allTouches] anyObject];
             endPoint = [touch locationInView:[touch view]];
-            if(((endPoint.x - beginPoint.x) > 10) || ((beginPoint.y - endPoint.y) > 10)){
-                CGPoint vector = CGPointMake(endPoint.x - beginPoint.x, beginPoint.y - endPoint.y);
-                NSLog(@"%f, %f = vector x, vector y", vector.x, vector.y);
-                float speed = (sqrt((vector.x * vector.x) + (vector.y * vector.y)) / [precisionTimer elapsedSeconds]);
-                NSLog(@"%f = speed", speed);
-                float m = sqrt((vector.x * vector.x) + (vector.y * vector.y));
-                if(0.0f != m){
-                    float f = (speed / 100.0f) / m;
-                    vector.x *= f;
-                    vector.y *= f;
-                }
+			CGFloat dx = endPoint.x - beginPoint.x;
+			CGFloat dy = endPoint.y - beginPoint.y;
+            if((abs(dx) > 10) || (abs(dy) > 10)){
+                CGPoint vector = CGPointMake(dx, dy);
+				float f = [precisionTimer elapsedSeconds] * 1000.0f;
+				vector.x /= f;
+				vector.y /= f;
                 [eglView setCurrentSpinVector:vector];
             }
         }
