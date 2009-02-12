@@ -10,6 +10,7 @@
 #import <OpenGLES/EAGL.h>
 #import <OpenGLES/ES1/gl.h>
 #import <OpenGLES/ES1/glext.h>
+#import "MachTimer.h"
 
 
 @interface EGLView : UIView {
@@ -29,15 +30,17 @@
 	NSTimer* viewUpdateTimer;
 	NSTimeInterval viewUpdateTimerInterval;
     CGPoint currentSpinRotation;
+    MachTimer* degradingTimer;
 }
 
-@property(nonatomic) CGPoint currentSpinVector;
+//@property(nonatomic) CGPoint currentSpinVector;
 @property(nonatomic) CGFloat zoomFactor;
 
 -(void)updateView;
--(void)setCubeTexture:(UIImage *)image;
+-(void)setCubeTexture:(UIImage *)anImage;
 -(void)renderEAGL;
--(int)nearestPowerOfTwo:(int)num;
+-(int)nearestPowerOfTwo:(int)aNumber;
+-(void)setCurrentSpinVector:(CGPoint)aVector;
 
 @end
 

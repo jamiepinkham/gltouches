@@ -27,6 +27,7 @@
                 case 1: //Single Tap.
                 {
                     [precisionTimer start];
+                    beginPoint = [touch locationInView:[self view]];
                     //Start a timer for 2 seconds.
                     //timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self 
                     //                                       selector:@selector(showAlertView:) userInfo:nil repeats:NO];
@@ -103,18 +104,19 @@
             NSLog(@"%f = [precisionTimer elapsedSeconds]", [precisionTimer elapsedSeconds]);
             UITouch *touch = [[event allTouches] anyObject];
             endPoint = [touch locationInView:[touch view]];
-            CGPoint vector = CGPointMake(endPoint.x - beginPoint.x, beginPoint.y - endPoint.y);
-            NSLog(@"%f, %f = vector x, vector y", vector.x, vector.y);
-            float speed = (sqrt((vector.x * vector.x) + (vector.y * vector.y)) / [precisionTimer elapsedSeconds]);
-            NSLog(@"%f = speed", speed);
-            float m = sqrt((vector.x * vector.x) + (vector.y * vector.y));
-            if(0.0f != m){
-                float f = (speed / 100.0f) / m;
-                vector.x *= f;
-                vector.y *= f;
+            if(((endPoint.x - beginPoint.x) > 10) || ((beginPoint.y - endPoint.y) > 10)){
+                CGPoint vector = CGPointMake(endPoint.x - beginPoint.x, beginPoint.y - endPoint.y);
+                NSLog(@"%f, %f = vector x, vector y", vector.x, vector.y);
+                float speed = (sqrt((vector.x * vector.x) + (vector.y * vector.y)) / [precisionTimer elapsedSeconds]);
+                NSLog(@"%f = speed", speed);
+                float m = sqrt((vector.x * vector.x) + (vector.y * vector.y));
+                if(0.0f != m){
+                    float f = (speed / 100.0f) / m;
+                    vector.x *= f;
+                    vector.y *= f;
+                }
+                [eglView setCurrentSpinVector:vector];
             }
-            [eglView setCurrentSpinVector:vector];
-            
         }
             
             break;

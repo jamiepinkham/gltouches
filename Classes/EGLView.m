@@ -13,7 +13,7 @@
 
 @implementation EGLView
 
-@synthesize currentSpinVector;
+//@synthesize currentSpinVector;
 @synthesize zoomFactor;
 
 + (Class) layerClass
@@ -110,7 +110,8 @@
 		currentSpinVector = CGPointMake(1.0f,0.25f);
 		currentSpinRotation = CGPointMake(0.0f,0.0f);
 		zoomFactor = 0.5f;
-		
+		degradingTimer = [[MachTimer alloc] init];
+        [degradingTimer start];
 		// Get the layer
 		CAEAGLLayer *eaglLayer = (CAEAGLLayer*) self.layer;
 		// set it up
@@ -160,10 +161,24 @@
 }
 
 - (void)updateView{
-	float secondsElapsed = 1.0f;
-	currentSpinRotation.x += currentSpinVector.x * secondsElapsed;
-	currentSpinRotation.y += currentSpinVector.y * secondsElapsed;
-	[self renderEAGL];
+    float degradingFactor = [degradingTimer elapsedSeconds] / 5;
+    NSLog(@"currentSpinVector.x = %f",currentSpinVector.x);
+    if(degradingFactor > 1.0)
+    {
+        currentSpinVector.x = 0;
+        currentSpinVector.y = 0;
+    }
+    else{
+        currentSpinRotation.x += currentSpinVector.x / ([degradingTimer elapsedSeconds] / 5);
+        currentSpinRotation.y += currentSpinVector.y / ([degradingTimer elapsedSeconds] / 5);  
+    }
+		[self renderEAGL];
+}
+
+-(void)setCurrentSpinVector:(CGPoint)aVector{
+    NSLog(@"%f new spin vector = ",aVector);
+    currentSpinVector = aVector;
+    [degradingTimer start];
 }
 
 - (void)renderEAGL{
@@ -256,9 +271,9 @@
 	
 }
 
--(void)setCubeTexture:(UIImage *)image{
+-(void)setCubeTexture:(UIImage *)anImage{
     
-    CGImageRef textureImage = image.CGImage;
+    CGImageRef textureImage = anImage.CGImage;
     size_t width = CGImageGetWidth(textureImage);
     size_t height = CGImageGetHeight(textureImage);
     if(textureImage){
