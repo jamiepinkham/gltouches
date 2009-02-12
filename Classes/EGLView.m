@@ -162,16 +162,9 @@
 
 - (void)updateView{
     float degradingFactor = [degradingTimer elapsedSeconds] / 5;
-    NSLog(@"currentSpinVector.x = %f",currentSpinVector.x);
-    if(degradingFactor > 1.0)
-    {
-        currentSpinVector.x = 0;
-        currentSpinVector.y = 0;
-    }
-    else{
+    NSLog(@"degradingFactor = %f",degradingFactor);
         currentSpinRotation.x += currentSpinVector.x / ([degradingTimer elapsedSeconds] / 5);
         currentSpinRotation.y += currentSpinVector.y / ([degradingTimer elapsedSeconds] / 5);  
-    }
 		[self renderEAGL];
 }
 
