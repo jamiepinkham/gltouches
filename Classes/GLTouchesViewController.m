@@ -138,8 +138,8 @@
 	{
 		imagePickerController = [[UIImagePickerController alloc] init];
 	}
-    imagePickerController.delegate = self;
-    imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    [imagePickerController setDelegate:self];
+    [imagePickerController setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
 	[self presentModalViewController:imagePickerController animated:YES];
 }
 
@@ -149,6 +149,7 @@
 {
 	[eglView setCubeTexture:image];
     [picker dismissModalViewControllerAnimated:YES];
+    [picker release];
 }
 /*
 // Implement loadView to create a view hierarchy programmatically, without using a nib.
