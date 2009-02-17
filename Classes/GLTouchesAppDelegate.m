@@ -16,7 +16,7 @@
 
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
-    
+    //comment to make this need to be commited to git.
     [application setStatusBarHidden:YES animated:YES];
     // Override point for customization after app launch    
     [window addSubview:viewController.view];
